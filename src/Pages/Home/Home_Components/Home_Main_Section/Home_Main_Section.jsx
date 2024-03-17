@@ -3,6 +3,7 @@ import grid2 from "../../../../../public/images/Home_Page_Images/home_grid-img2.
 import grid3 from "../../../../../public/images/Home_Page_Images/home_grid-img3.png";
 import Statistics from "../Statistics/Statistics";
 
+
 const Home_Main_Section = () => {
   return (
     <>
@@ -45,7 +46,7 @@ const Home_Main_Section = () => {
                       and hope thrive together. Welcome to Smart Home People.
                     </p>
                     <div className="border-2 border-dashed p-2 rounded">
-                     <Statistics/>
+                      <Statistics />
                     </div>
                   </div>
                 </div>
