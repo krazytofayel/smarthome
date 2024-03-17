@@ -12,7 +12,7 @@ const Statistics = () => {
             <div>
               <AnimatedStatsCard
                 title="Download"
-                value="1000"
+                value="400"
                 icon={<FaDownload className="text-white" />}
               />
             </div>
