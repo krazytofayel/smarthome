@@ -4,6 +4,7 @@ import NavBar from "../../Components/Shareable_Components/NavBar/NavBar";
 import AboutUs_Section from "./Home_Components/AboutUs_Section/AboutUs_Section";
 import Home_Main_Section from "./Home_Components/Home_Main_Section/Home_Main_Section";
 import Why_ChooseUs_Section from "./Home_Components/Why_ChooseUs_Section/Why_ChooseUs_Section";
+import Our_Product_Section from "./Home_Components/Our_Product_Section/Our_Product_Section";
 
 const Home = () => {
   const [navfix, setNavfix] = useState(false);
@@ -29,6 +30,7 @@ const Home = () => {
       <Home_Main_Section />
       <AboutUs_Section />
       <Why_ChooseUs_Section/>
+      <Our_Product_Section/>
     </>
   );
 };
