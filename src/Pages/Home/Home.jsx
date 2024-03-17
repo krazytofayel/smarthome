@@ -1,9 +1,8 @@
-
 import { useState } from "react";
 import NavBar from "../../Components/Shareable_Components/NavBar/NavBar";
-import Home_Main_Section from "./Home_Components/Home_Main_Section/Home_Main_Section";
-import AboutUs_Section from "./Home_Components/AboutUs_Section/AboutUs_Section";
 
+import AboutUs_Section from "./Home_Components/AboutUs_Section/AboutUs_Section";
+import Home_Main_Section from "./Home_Components/Home_Main_Section/Home_Main_Section";
 
 const Home = () => {
   const [navfix, setNavfix] = useState(false);
@@ -26,8 +25,8 @@ const Home = () => {
       >
         <NavBar />
       </div>
-     <Home_Main_Section/>
-     <AboutUs_Section/>
+      <Home_Main_Section />
+      <AboutUs_Section />
     </>
   );
 };
