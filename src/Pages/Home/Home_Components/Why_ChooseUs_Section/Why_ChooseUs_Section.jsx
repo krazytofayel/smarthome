@@ -1,7 +1,7 @@
 import Main_Title_Section from "../../../../Components/Shareable_Components/Main_Title_Section/Main_Title_Section";
 import Secondary_Title_Section from "../../../../Components/Shareable_Components/Secondary_Title_Section/Secondary_Title_Section";
-import aboutimg from "../../../../../public/images/Home_Page_Images/Aboutus_Page_Images/aboutus-img.png";
-import { FiSearch } from "react-icons/fi";
+import whychooseusimg from "../../../../../public/images/Home_Page_Images/Why_ChoosUs_Page_Images/whychoosus.png";
+
 import Statistics from "../Statistics/Statistics";
 import Why_ChoosUs_Single_Card from "./Why_ChoosUs_Components/Why_ChoosUs_Single_Card/Why_ChoosUs_Single_Card";
 const Why_ChooseUs_Section = () => {
@@ -43,9 +43,9 @@ const Why_ChooseUs_Section = () => {
             <div className="bg-[#EBEBEB] rounded-[45px] shadow-lg  ">
               <div className="p-5  ">
                 <img
-                  className="object-cover object-center rounded-lg ml-10 h-full w-full "
+                  className="object-cover object-center rounded-lg -ml-10 h-full w-full "
                   alt="hero"
-                  src={aboutimg}
+                  src={whychooseusimg}
                 />
               </div>
             </div>
