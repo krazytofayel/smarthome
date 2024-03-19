@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavBar from "../../../Components/Shareable_Components/NavBar/NavBar";
 import Service_Section from "./Service_Section/Service_Section";
+import FAQ_Section from "../../../Components/Shareable_Components/FAQ_Section/FAQ_Section";
 
 const Service = () => {
   const [navfix, setNavfix] = useState(false);
@@ -24,9 +25,9 @@ const Service = () => {
         <NavBar />
       </div>
       <div className="mt-20">
-        <div className="bg-cover bg-center bg-no-repeat bg-hero-pattern  bg-blend-multiply h-[30rem]  mb-5">
+        <div className="bg-cover bg-center bg-no-repeat bg-hero-pattern  bg-blend-multiply h-[25rem]  mb-5">
           <div className="flex flex-col justify-start ">
-            <h2 className="text-4xl font-bold text-white flex text-start mt-32 ml-14">
+            <h2 className="text-6xl font-bold text-white flex text-start mt-32 mb-4 ml-14">
               About Us
             </h2>
             <nav className="flex  ml-14" aria-label="Breadcrumb">
@@ -59,9 +60,9 @@ const Service = () => {
                     >
                       <path
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="m1 9 4-4-4-4"
                       />
                     </svg>
@@ -69,7 +70,7 @@ const Service = () => {
                       href="#"
                       className="ms-1 text-sm font-medium text-white hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white"
                     >
-                      Projects
+                      Service
                     </a>
                   </div>
                 </li>
@@ -84,14 +85,14 @@ const Service = () => {
                     >
                       <path
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="m1 9 4-4-4-4"
                       />
                     </svg>
-                    <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">
-                      About us
+                    <span className="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">
+                   all service
                     </span>
                   </div>
                 </li>
@@ -100,6 +101,7 @@ const Service = () => {
           </div>
         </div>
         <Service_Section />
+        <FAQ_Section/>
       </div>
     </>
   );
