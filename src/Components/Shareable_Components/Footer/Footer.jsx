@@ -13,6 +13,13 @@ import { Link } from "react-router-dom";
 
 import Single_SocialIcon from "./Footer_Components/Single_SocialIcon/Single_SocialIcon";
 const Footer = () => {
+  //this is important to show content in top 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <div className="w-full  h-full  pb-5  text-white px-5 bg-[#000000] opacity-95  ">
@@ -69,7 +76,12 @@ const Footer = () => {
                   </a>
 
                   <li>
-                    <Link to="/help" className="hover:underline" href="">
+                    <Link
+                      to="/help"
+                      className="hover:underline"
+                      onClick={scrollToTop}
+                      href=""
+                    >
                       {" "}
                       Help
                     </Link>
@@ -79,6 +91,7 @@ const Footer = () => {
                     <Link
                       to="/privacy_policy"
                       className="hover:underline"
+                      onClick={scrollToTop}
                       href=""
                     >
                       {" "}
@@ -87,8 +100,9 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="/condition_of_use"
+                      to="/terms_and_condition"
                       className="hover:underline"
+                      onClick={scrollToTop}
                       href=""
                     >
                       {" "}
@@ -99,6 +113,7 @@ const Footer = () => {
                     <Link
                       to="/lagel_agreement"
                       className="hover:underline"
+                      onClick={scrollToTop}
                       href=""
                     >
                       {" "}
@@ -106,11 +121,21 @@ const Footer = () => {
                     </Link>
                   </li>
 
-                  <Link to="/aboutus" className="hover:underline" href="">
+                  <Link
+                    to="/aboutus"
+                    className="hover:underline"
+                    onClick={scrollToTop}
+                    href=""
+                  >
                     <li>About Us </li>
                   </Link>
-                  <Link to={"/user_guide"} className="hover:underline" href="">
-                    <li>User Guide</li>
+                  <Link
+                    to={"/blog"}
+                    className="hover:underline"
+                    onClick={scrollToTop}
+                    href=""
+                  >
+                    <li>Blog</li>
                   </Link>
 
                   {/* <Link className="hover:underline" href="">
