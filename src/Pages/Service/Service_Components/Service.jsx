@@ -2,6 +2,7 @@ import { useState } from "react";
 import NavBar from "../../../Components/Shareable_Components/NavBar/NavBar";
 import Service_Section from "./Service_Section/Service_Section";
 import FAQ_Section from "../../../Components/Shareable_Components/FAQ_Section/FAQ_Section";
+import Footer from "../../../Components/Shareable_Components/Footer/Footer";
 
 const Service = () => {
   const [navfix, setNavfix] = useState(false);
@@ -102,6 +103,7 @@ const Service = () => {
         </div>
         <Service_Section />
         <FAQ_Section/>
+        <Footer/>
       </div>
     </>
   );
