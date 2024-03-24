@@ -5,10 +5,11 @@ import Single_left_Service_Section from "./Single_left_Service_Section/Single_le
 const Service_Section = () => {
   return (
     <>
-    {/* using map for dynamic content  */}
+      {/* using map for dynamic content  */}
       <section>
         <div className="w-full mx-auto py-10 bg-gray-50 dark:bg-gray-900 dark:text-white">
           <Single_left_Service_Section
+            postId='111'
             service_section_header="1. Smart Home Installation."
             service_text_content="Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
@@ -20,6 +21,7 @@ const Service_Section = () => {
             service_section_button_text="Read More"
           />
           <Single_Right_Service_Section
+            postId="110"
             service_section_header="2. Home Security Integration"
             service_text_content="Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
