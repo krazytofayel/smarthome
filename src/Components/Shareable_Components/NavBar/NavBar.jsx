@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import navlogo from "../../../../public/images/Logo.png";
 import { motion } from "framer-motion";
 const NavBar = () => {
   let Links = [
@@ -26,8 +26,12 @@ const NavBar = () => {
               }}
             >
               {" "}
-              {/* <img src={navlogo} alt=" main logo" className="h-10" /> */}
-              <h1>Smart home people</h1>
+              <img
+                src={navlogo}
+                alt=" main logo"
+                className="w-[7rem] h-12  drop-shadow-xl"
+              />
+              {/* <h1>Smart home people</h1> */}
             </motion.div>
           </div>
 

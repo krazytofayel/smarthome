@@ -9,7 +9,7 @@ import { BsSendFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 import { Link } from "react-router-dom";
-
+import navlogo from "../../../../public/images/Logo.png";
 
 import Single_SocialIcon from "./Footer_Components/Single_SocialIcon/Single_SocialIcon";
 const Footer = () => {
@@ -26,11 +26,11 @@ const Footer = () => {
         <div className="container px-5 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className=" md:w-64 lg:w-[25rem] flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <div className="flex justify-center md:justify-start">
-              {/* <img src={FooterlogoImg} alt=" main logo" className=" " /> */}
-              <p className="text-2xl text-blue-600 font-bold ">
-                smart home people
-              </p>
+              <img src={navlogo} alt=" main logo" className=" " />
             </div>
+            <p className="text-2xl text-blue-600 font-bold ">
+              smart home people
+            </p>
             <p className="my-3 text-[16px] text-white mt-5 mb-10">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
