@@ -2,8 +2,9 @@ import { useState } from "react";
 import NavBar from "../../Components/Shareable_Components/NavBar/NavBar";
 import Blog_Section_Upper_Part from "./Blog_Components/Blog_Section_Upper_Part/Blog_Section_Upper_Part"
 import Blog_Popular_Post from "./Blog_Components/Blog_Popular_Post/Blog_Popular_Post";
-import Blog_Recent_Post_Part from "./Blog_Components/Blog_Recent_Post_Part/Blog_Recent_Post_Part";
 import Footer from "../../Components/Shareable_Components/Footer/Footer";
+import Blog_All_Post from "./Blog_Components/Blog_All_Post/Blog_All_Post";
+import Blog_Recent_Post from "./Blog_Components/Blog_Recent_Post/Blog_Recent_Post";
 
 
 
@@ -32,7 +33,8 @@ const Blog = () => {
         <Blog_Section_Upper_Part />
       
           <Blog_Popular_Post />
-          <Blog_Recent_Post_Part/>
+          <Blog_Recent_Post/>
+          <Blog_All_Post/>
         <Footer/>
       </div>
     </>
