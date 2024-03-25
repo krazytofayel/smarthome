@@ -8,6 +8,8 @@ import ContactUs from "./Pages/ContactUs/ContactUs";
 import Blog from "./Pages/Blog/Blog";
 import Blog_Details from "./Pages/Blog_Details/Blog_Details";
 import Service_Details from './Pages/Service/Service_Details/Service_Details'
+import Project from "./Pages/Project/Project";
+import Project_Details from "./Pages/Project/Project_Details/Project_Details";
 function App() {
   
 
@@ -22,6 +24,9 @@ function App() {
         <Route path="/contact_us" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:postId" element={<Blog_Details />} />
+
+        <Route path="/project" element={<Project />} />
+        <Route path="/project_details/:postId" element={<Project_Details />} />
       </Routes>
     </>
   );
