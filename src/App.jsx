@@ -10,6 +10,7 @@ import Blog_Details from "./Pages/Blog_Details/Blog_Details";
 import Service_Details from './Pages/Service/Service_Details/Service_Details'
 import Project from "./Pages/Project/Project";
 import Project_Details from "./Pages/Project/Project_Details/Project_Details";
+import Product from "./Pages/Product/Product";
 function App() {
   
 
@@ -27,6 +28,8 @@ function App() {
 
         <Route path="/project" element={<Project />} />
         <Route path="/project_details/:postId" element={<Project_Details />} />
+
+        <Route path="/product" element={<Product />} />
       </Routes>
     </>
   );
