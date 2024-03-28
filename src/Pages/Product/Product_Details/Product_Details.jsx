@@ -4,6 +4,7 @@ import Product_Category from "../Product_Components/Product_Category/Product_Cat
 import Price_Range_Selector from "../Product_Components/Price_Range_Selector/Price_Range_Selector";
 import Slider from "../Product_Components/Slider/Slider";
 import Product_List from "../Product_Components/Product_List/Product_List";
+import Product_Search from "../Product_Components/Product_Search/Product_Search";
 
 
 const Product_Details = () => {
@@ -17,6 +18,12 @@ const Product_Details = () => {
 
   const [filteredProducts, setFilteredProducts] = useState([]);
 
+  // Function to set the filtered products
+  const handleFilteredProducts = (filtered) => {
+    setFilteredProducts(filtered);
+  };
+  
+
   // Sample products data
   const products = [
     {
@@ -26,40 +33,40 @@ const Product_Details = () => {
       price: 300,
       discount: 70,
       category: "Photos",
-      title: "Best View in New York City",
+      title: "Best View in New Yjlork City",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T04:30:00",
     },
     {
-      name: "Product 1",
+      name: "Product 2",
       imageUrl: "../../../public/images/Product_Page_Images/product_img-2.png",
 
       price: 900,
       discount: 20,
       category: "Photos",
-      title: "Best View in New York City",
+      title: "Best View in ",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T10:30:00",
     },
     {
-      name: "Product 1",
+      name: "Product ",
       imageUrl: "../../../public/images/Product_Page_Images/product_img-3.png",
 
       price: 1300,
       discount: 55,
       category: "Photos",
-      title: "Best View in New York City",
+      title: "Best View in New ",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T10:30:00",
     },
     {
-      name: "Product 1",
+      name: "Product ",
       imageUrl: "../../../public/images/Product_Page_Images/product_img-4.png",
 
       price: 200,
       discount: 50,
       category: "Photos",
-      title: "Best View in New York City",
+      title: "Best View in New York Cit",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T09:30:00",
     },
@@ -70,18 +77,18 @@ const Product_Details = () => {
       price: 900,
       // discount: 35,
       category: "Photos",
-      title: "Best View in New York City",
+      title: "Best View in New York ",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T01:30:00",
     },
     {
-      name: "Product 1",
+      name: "Product 8",
       imageUrl: "../../../public/images/Product_Page_Images/product_img-6.png",
 
       price: 100,
       // discount: 10,
       category: "Photos",
-      title: "Best View in New York City",
+      title: "Best View in New York Ci",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T20:30:00",
     },
@@ -164,13 +171,25 @@ const Product_Details = () => {
               <div>
                 <Slider slides={slides} />
               </div>
-
-              <div className="mt-10">
-                <Product_List
-                  products={
-                    filteredProducts.length > 0 ? filteredProducts : products
-                  }
+              <div>
+                <div className="mt-2">
+                  <Secondary_Title_Section
+                    secondary_title={"Our Collection Of Products"}
+                  />
+                </div>
+                {/* Pass products and handleFilteredProducts as props to Product_Search */}
+                <Product_Search
+                  products={products}
+                  setFilteredProducts={handleFilteredProducts}
                 />
+              </div>
+              <div className="mt-10">
+                {/* Render Product_List with filteredProducts if available, otherwise render all products */}
+                {filteredProducts.length > 0 ? (
+                  <Product_List products={filteredProducts} />
+                ) : (
+                  <Product_List products={products} />
+                )}
               </div>
             </div>
           </div>
