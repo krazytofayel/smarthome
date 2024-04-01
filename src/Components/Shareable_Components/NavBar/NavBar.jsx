@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const NavBar = () => {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "About Us", link: "/aboutus" },
+    { name: "About Us", link: "/about_us" },
     { name: "Service", link: "/service" },
     { name: "Contact US", link: "/contact_us" },
     { name: "Product", link: "/product" },
@@ -68,7 +68,7 @@ const NavBar = () => {
               className="md:hidden my-3 truncate"
               whileHover={{ scale: 1.1 }}
             >
-              <Link to="login">Login</Link>
+              <Link to="booking">Booking Now</Link>
             </motion.li>
             <motion.li
               className="md:hidden truncate"
@@ -84,7 +84,7 @@ const NavBar = () => {
             }`}
           >
             <button className="bg-[#d6e5f1] text-[#2c6777] md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
-              <Link to="/becomea_tutor">Ligin</Link>
+              <Link to="/booking">Booking now</Link>
             </button>
             <button className="bg-green-500 text-white md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
               <Link to="/sign_in">Sign up</Link>
