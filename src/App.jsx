@@ -12,6 +12,8 @@ import Project from "./Pages/Project/Project";
 import Project_Details from "./Pages/Project/Project_Details/Project_Details";
 import Product from "./Pages/Product/Product";
 import Single_Product_Details from "./Pages/Product/Product_Components/Single_Product_Details/Single_Product_Details";
+import AboutUs from "./Pages/AboutUs/AboutUs";
+import Booking from "./Pages/Booking/Booking";
 
 function App() {
   
@@ -32,7 +34,11 @@ function App() {
         <Route path="/project_details/:postId" element={<Project_Details />} />
 
         <Route path="/product" element={<Product />} />
-        <Route path='/single_product_details' element={<Single_Product_Details/>} />
+        <Route path="/product/:postId" element={<Single_Product_Details />} />
+
+        <Route path="/about_us" element={<AboutUs />} />
+
+        <Route path="/booking" element={<Booking/>} />
       </Routes>
     </>
   );
