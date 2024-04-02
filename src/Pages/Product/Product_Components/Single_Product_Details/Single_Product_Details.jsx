@@ -20,6 +20,7 @@ const Single_Product_Details = () => {
       title: "Best View in New Yjlork City",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T04:30:00",
+      postId: "123",
     },
     {
       name: "Product 2",
@@ -31,6 +32,7 @@ const Single_Product_Details = () => {
       title: "Best View in ",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T10:30:00",
+      postId: "124",
     },
     {
       name: "Product ",
@@ -42,6 +44,7 @@ const Single_Product_Details = () => {
       title: "Best View in New ",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T10:30:00",
+      postId: "125",
     },
     {
       name: "Product ",
@@ -53,6 +56,7 @@ const Single_Product_Details = () => {
       title: "Best View in New York Cit",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T09:30:00",
+      postId: "126",
     },
     {
       name: "Product 1",
@@ -64,6 +68,7 @@ const Single_Product_Details = () => {
       title: "Best View in New York ",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T01:30:00",
+      postId: "127",
     },
     {
       name: "Product 8",
@@ -75,6 +80,7 @@ const Single_Product_Details = () => {
       title: "Best View in New York Ci",
       description: "The city that never sleeps",
       timestamp: "2024-03-17T20:30:00",
+      postId: "128",
     },
     // Add more products as needed
   ];
