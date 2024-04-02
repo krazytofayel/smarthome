@@ -12,7 +12,11 @@ const Single_SocialIcon = ({ icon, hoverIconSrc, alt, link }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {isHovered ? <img src={hoverIconSrc} alt={alt} /> : icon}
+        {isHovered && hoverIconSrc ? (
+          <img src={hoverIconSrc} alt={alt} />
+        ) : (
+          icon
+        )}
       </a>
     </>
   );
