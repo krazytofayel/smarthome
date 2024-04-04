@@ -4,9 +4,10 @@ import navlogo from "../../../../public/images/Logo.png";
 import { motion } from "framer-motion";
 import { FaShoppingBag } from "react-icons/fa";
 import QuantityCounter from "../QuantityCounter _Section/QuantityCounter";
+import Global_Button_Section from "../Global_Buton_Section/Global_Button_Section";
 const NavBar = ({ cartCount, clickedProducts }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  
+
   let Links = [
     { name: "Home", link: "/" },
     { name: "About Us", link: "/about_us" },
@@ -38,10 +39,15 @@ const NavBar = ({ cartCount, clickedProducts }) => {
   console.log("***updated price", totalPrice);
   console.log(clickedProducts ?? []);
   //Modify receve arry to convert object.because i want to use map
-  const clickedProductArray = clickedProducts? Object.values(clickedProducts): [];
+  const clickedProductArray = clickedProducts
+    ? Object.values(clickedProducts)
+    : [];
 
   console.log("array of clicked item cart", clickedProductArray ?? []);
-
+  const totalAmount = clickedProductArray.reduce(
+    (accumulator, product) => accumulator + (product.totalPrice || 0),
+    0
+  );
   return (
     <>
       <div>
@@ -163,7 +169,7 @@ const NavBar = ({ cartCount, clickedProducts }) => {
                 </svg>
                 <span className="sr-only">Close menu</span>
               </button>
-               {/* Conditional rendering based on cartCount */}
+              {/* Conditional rendering based on cartCount */}
               {cartCount === 0 ? (
                 <p className="mt-4 text-sm text-gray-500">
                   Add product to the cart
@@ -225,6 +231,13 @@ const NavBar = ({ cartCount, clickedProducts }) => {
                       </div>
                     </div>
                   ))}
+                  <p className="text-xs leading-3 underline text-red-500 pl-5 mt-20 cursor-pointer">
+                    total: ${totalAmount.toFixed(2)}
+                  </p>
+                  <Link to={"/checkout"}>
+                    {" "}
+                    <Global_Button_Section button_text={"checkout"} />
+                  </Link>
                 </div>
               )}
             </div>

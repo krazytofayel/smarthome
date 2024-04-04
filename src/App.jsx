@@ -14,6 +14,7 @@ import Product from "./Pages/Product/Product";
 import Single_Product_Details from "./Pages/Product/Product_Components/Single_Product_Details/Single_Product_Details";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Booking from "./Pages/Booking/Booking";
+import Checkout_Section from "./Components/Shareable_Components/Checkout_Section/Checkout_Section";
 
 function App() {
   
@@ -38,7 +39,9 @@ function App() {
 
         <Route path="/about_us" element={<AboutUs />} />
 
-        <Route path="/booking" element={<Booking/>} />
+        <Route path="/booking" element={<Booking />} />
+
+        <Route path="/checkout" element={<Checkout_Section />} />
       </Routes>
     </>
   );
