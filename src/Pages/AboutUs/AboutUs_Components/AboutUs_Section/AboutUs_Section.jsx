@@ -3,8 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import Secoundary_Title_Section from "../../../../Components/Shareable_Components/Secondary_Title_Section/Secondary_Title_Section";
 import Main_Title_Section from "../../../../Components/Shareable_Components/Main_Title_Section/Main_Title_Section";
 import Text_Content_Section from "../../../../Components/Shareable_Components/Text_Content_Section/Text_Content_Section";
-import Statistics from "../Statistics/Statistics";
-import SpineButton from "../../../../Components/Shareable_Components/SpineButton/SpineButton";
+import Statistics from "../../../Home/Home_Components/Statistics/Statistics";
 
 const AboutUs_Section = () => {
   return (
@@ -38,7 +37,6 @@ const AboutUs_Section = () => {
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 py-9   ">
             <Secoundary_Title_Section secondary_title={"About Us"} />
-            {/* <SpineButton/> */}
             <div className="mt-5 mb-5">
               <Main_Title_Section
                 main_title={"The core mission behind all our work"}
@@ -48,7 +46,7 @@ const AboutUs_Section = () => {
             <div className="text-lg font-semibold ">
               <Text_Content_Section
                 text_content={
-                  "With 8 years of excellence in the tech industry, Smart Home People is dedicated to delivering cutting-edge solutions and unparalleled customer service. Our team excels in home automation, ensuring easy integration and innovation. Let embrace the future of home automation together."
+                  "With 8 years of excellence in the tech industry, Smart Home People is dedicated to delivering cutting-edge solutions and unparalleled customer service. Our team  excels in home automation, ensuring easy integration and innovation. Let embrace the future of home automation together."
                 }
               />
             </div>
