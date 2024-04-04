@@ -47,7 +47,7 @@ const Single_Product_Card = ({ product, postId, addToCart }) => {
             href="#"
             className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
           >
-            {product.title}
+            {product.name}
           </a>
           <p className="text-gray-500 text-sm">{product.description}</p>
         </div>

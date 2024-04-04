@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import navlogo from "../../../../public/images/Logo.png";
 import { motion } from "framer-motion";
@@ -6,7 +6,7 @@ import { FaShoppingBag } from "react-icons/fa";
 import QuantityCounter from "../QuantityCounter _Section/QuantityCounter";
 const NavBar = ({ cartCount, clickedProducts }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
+  
   let Links = [
     { name: "Home", link: "/" },
     { name: "About Us", link: "/about_us" },
@@ -14,18 +14,33 @@ const NavBar = ({ cartCount, clickedProducts }) => {
     { name: "Contact US", link: "/contact_us" },
     { name: "Product", link: "/product" },
   ];
-
+  console.log("pass to navbar", clickedProducts);
   let [open, setOpen] = useState(false);
   // Define state for total price
-  const [totalPrice, setTotalPrice] = useState('');
+  const [totalPrice, setTotalPrice] = useState("");
 
- const handleQuantityChange = (newQuantity) => {
-   // Calculate total price based on new quantity
-   const totalPrice = newQuantity * clickedProducts[0].price; // Assuming clickedProducts is an array with one product
-   setTotalPrice(totalPrice);
- };
+  const handleQuantityChange = (newQuantity, productId) => {
+    // Find the index of the product in the clickedProducts array
+    const productIndex = clickedProducts.findIndex(
+      (product) => product.id === productId
+    );
+    if (productIndex !== -1) {
+      // Update the quantity for the specific product
+      const updatedProducts = [...clickedProducts];
+      updatedProducts[productIndex].quantity = newQuantity;
+      // Calculate the total price for the specific product
+      updatedProducts[productIndex].totalPrice =
+        newQuantity * updatedProducts[productIndex].price;
 
+      setTotalPrice(updatedProducts[productIndex].totalPrice);
+    }
+  };
+  console.log("***updated price", totalPrice);
   console.log(clickedProducts ?? []);
+  //Modify receve arry to convert object.because i want to use map
+  const clickedProductArray = clickedProducts? Object.values(clickedProducts): [];
+
+  console.log("array of clicked item cart", clickedProductArray ?? []);
 
   return (
     <>
@@ -148,13 +163,14 @@ const NavBar = ({ cartCount, clickedProducts }) => {
                 </svg>
                 <span className="sr-only">Close menu</span>
               </button>
-              {cartCount === 0 ? ( // Conditional rendering based on cartCount
+               {/* Conditional rendering based on cartCount */}
+              {cartCount === 0 ? (
                 <p className="mt-4 text-sm text-gray-500">
                   Add product to the cart
                 </p>
               ) : (
                 <div className="flex flex-col py-8 md:py-10 lg:py-8 border-t border-gray-50">
-                  {clickedProducts.map((product, index) => (
+                  {clickedProductArray.map((product, index) => (
                     <div key={index} className="flex  w-full">
                       <img
                         src={product.imageUrl}
@@ -175,8 +191,10 @@ const NavBar = ({ cartCount, clickedProducts }) => {
                             {product.name}
                           </p>
                           <QuantityCounter
-                            initialValue={1}
-                            onQuantityChange={handleQuantityChange}
+                            initialValue={product.quantity}
+                            onQuantityChange={(newQuantity) =>
+                              handleQuantityChange(newQuantity, product.id)
+                            }
                           />
                         </div>
                         <p className="text-xs leading-3 text-gray-600 pt-2">
@@ -198,10 +216,10 @@ const NavBar = ({ cartCount, clickedProducts }) => {
                             </p>
                           </div>
                           <p className="text-base font-black leading-none text-gray-800">
-                            {totalPrice? totalPrice:product.price}
-                            {/* {product.discount
-                              ? `$${product.discountedPrice.toFixed(2)}`
-                              : `$${product.price}`} */}
+                            {/* {totalPrice ? totalPrice : product.price} */}
+                            {product.totalPrice
+                              ? `$${product.totalPrice.toFixed(2)}`
+                              : `$${product.price}`}
                           </p>
                         </div>
                       </div>

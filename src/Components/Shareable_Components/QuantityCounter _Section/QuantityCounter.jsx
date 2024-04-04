@@ -4,14 +4,16 @@ const QuantityCounter = ({ initialValue, onQuantityChange }) => {
   const [quantity, setQuantity] = useState(initialValue);
 
   const handleIncrement = () => {
-    setQuantity((prevQuantity) => prevQuantity + 1);
-    onQuantityChange(quantity + 1);
+    const newQuantity = quantity + 1;
+    setQuantity(newQuantity);
+    onQuantityChange(newQuantity);
   };
 
   const handleDecrement = () => {
     if (quantity > 1) {
-      setQuantity((prevQuantity) => prevQuantity - 1);
-      onQuantityChange(quantity - 1);
+      const newQuantity = quantity - 1;
+      setQuantity(newQuantity);
+      onQuantityChange(newQuantity);
     }
   };
 
