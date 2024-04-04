@@ -4,6 +4,7 @@ import Secoundary_Title_Section from "../../../../Components/Shareable_Component
 import Main_Title_Section from "../../../../Components/Shareable_Components/Main_Title_Section/Main_Title_Section";
 import Text_Content_Section from "../../../../Components/Shareable_Components/Text_Content_Section/Text_Content_Section";
 import Statistics from "../../../Home/Home_Components/Statistics/Statistics";
+import SpineButton from "../../../../Components/Shareable_Components/SpineButton/SpineButton";
 
 const AboutUs_Section = () => {
   return (
@@ -35,9 +36,14 @@ const AboutUs_Section = () => {
             </div>
             {/* https://dummyimage.com/720x600 */}
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 py-9   ">
-            <Secoundary_Title_Section secondary_title={"About Us"} />
-            <div className="mt-5 mb-5">
+          <div className="z-10">
+            <SpineButton  />
+          </div>
+          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 py-9  relative ">
+            <div className="flex justify-between w-full">
+              <Secoundary_Title_Section secondary_title={"About Us"} />
+            </div>
+            <div className=" mt-5 mb-5">
               <Main_Title_Section
                 main_title={"The core mission behind all our work"}
               />
