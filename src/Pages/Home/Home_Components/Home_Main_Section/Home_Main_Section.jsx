@@ -21,9 +21,8 @@ const Home_Main_Section = () => {
               <section className="w-full  ">
                 <div className="max-w-7xl mx-auto py-5 px-4 ">
                   <div className=" ">
-                    <p className="mt-1 text-6xl max-w-lg font-extrabold text-gray-900  sm:tracking-tight ">
-                      {" "}
-                      <span className=" relative inline-block">
+                    <p className="sm:mt-10 text-6xl sm:calm:text-5xl md:calm:text-6xl lg:calm:text-7xl xl:calm:text-8xl max-w-lg font-extrabold text-gray-900 sm:tracking-tight">
+                      <span className="relative inline-block">
                         <svg
                           className="stroke-current bottom-0 absolute text-blue-500 -translate-x-2"
                           viewBox="0 0 410 18"
@@ -53,7 +52,7 @@ const Home_Main_Section = () => {
               </section>
             </div>
             <div className="w-full ">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 ">
+              <div className="mt-10  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 ">
                 <div className="col-span-2 sm:col-span-1 md:col-span-1 h-[31.5rem]">
                   <a
                     href="#"
