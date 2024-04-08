@@ -10,7 +10,7 @@ const NavBar = ({ cartCount, clickedProducts }) => {
 
   let Links = [
     { name: "Home", link: "/" },
-    { name: "About Us", link: "/about_us" },
+    { name: "About Us", link: "/aboutus" },
     { name: "Service", link: "/service" },
     { name: "Contact US", link: "/contact_us" },
     { name: "Product", link: "/product" },
