@@ -31,12 +31,12 @@ const Home = () => {
         <NavBar />
       </div>
       <Home_Main_Section />
-      {/* <AboutUs_Section /> */}
-      {/* <Why_ChooseUs_Section/> */}
-      {/* <Service_Section/> */}
-      {/* <Review_Section/> */}
-      {/* <Our_Product_Section/> */}
-      {/* <FAQ_Section/> */}
+      <AboutUs_Section />
+      <Why_ChooseUs_Section/>
+      <Service_Section/>
+      <Review_Section/>
+      <Our_Product_Section/>
+      <FAQ_Section/>
     </>
   );
 };
