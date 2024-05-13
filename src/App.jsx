@@ -1,5 +1,6 @@
 
 import { Routes, Route } from "react-router-dom";
+
 import Home from "./Pages/Home/Home";
 import Service from "./Pages/Service/Service";
 import Privacy_policy from "./Pages/Static_Page/Privacy_Policy/Privacy_policy";
@@ -14,12 +15,15 @@ import Product from "./Pages/Product/Product";
 import Single_Product_Details from "./Pages/Product/Product_Components/Single_Product_Details/Single_Product_Details";
 import Booking from "./Pages/Booking/Booking";
 import Checkout_Section from "./Components/Shareable_Components/Checkout_Section/Checkout_Section";
-import AboutUs from './Pages/AboutUs/AboutUs'
+import AboutUs from './Pages/AboutUs/AboutUs';
+
 function App() {
   
 
   return (
     <>
+     
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/service" element={<Service />} />

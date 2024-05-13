@@ -18,42 +18,54 @@ const Choose_Service_Section = () => {
             description={
               "Simplify home automation with our Smart Home Installation service, handling voice-controlled assistants and remote controlled features."
             }
-            imgSrc={<RiHomeOfficeLine className="size-8 text-blue-600" />}
+            imgSrc={
+              <RiHomeOfficeLine className="size-8 text-[#00ABE4] hover:text-white" />
+            }
           />
           <Single_Service_Card
             name="Home Security Integration"
             description={
               "Seamlessly incorporating smart locks, video doorbells, and surveillance cameras for comprehensive protection."
             }
-            imgSrc={<MdOutlineSecurity className="size-8 text-blue-600" />}
+            imgSrc={
+              <MdOutlineSecurity className="size-8 text-[#00ABE4] hover:text-white" />
+            }
           />
           <Single_Service_Card
             name="Smart Home Consultation"
             description={
               "Offering expert advice on smart technology integration tailored to your needs."
             }
-            imgSrc={<TbHomeStar className="size-8 text-blue-600" />}
+            imgSrc={
+              <TbHomeStar className="size-8 text-[#00ABE4] hover:text-white" />
+            }
           />
           <Single_Service_Card
             name="Home Appliances Automation"
             description={
               "Enables connectivity among your home appliances, allowing them to perform daily tasks automatically, requiring no manual intervention."
             }
-            imgSrc={<RiHomeOfficeLine className="size-8 text-blue-600" />}
+            imgSrc={
+              <RiHomeOfficeLine className="size-8 text-[#00ABE4] hover:text-white" />
+            }
           />
           <Single_Service_Card
             name="Automated Lighting Installation"
             description={
               "Customizing lighting schedules and ambiance to suit your lifestyle."
             }
-            imgSrc={<RiHomeOfficeLine className="size-8 text-blue-600" />}
+            imgSrc={
+              <RiHomeOfficeLine className="size-8 text-[#00ABE4] hover:text-[#fff]" />
+            }
           />
           <Single_Service_Card
             name="After Sales Support"
             description={
               "Ensuring your smart home systems continue to operate smoothly with expert troubleshooting and maintenance."
             }
-            imgSrc={<RiHomeOfficeLine className="size-8 text-blue-600" />}
+            imgSrc={
+              <RiHomeOfficeLine className="size-8 text-[#00ABE4] hover:text-[#fff] " />
+            }
           />
         </div>
       </section>

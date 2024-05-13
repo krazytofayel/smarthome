@@ -9,7 +9,7 @@ import { BsSendFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 import { Link } from "react-router-dom";
-import navlogo from "../../../../public/images/Logo.png";
+import FooterLogo from "../../../../public/images/Footer_Images/footer-logo.png";
 
 import Single_SocialIcon from "./Footer_Components/Single_SocialIcon/Single_SocialIcon";
 const Footer = () => {
@@ -26,16 +26,17 @@ const Footer = () => {
         <div className="container px-5 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className=" md:w-64 lg:w-[25rem] flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <div className="flex justify-center md:justify-start">
-              <img src={navlogo} alt=" main logo" className=" " />
+              <img src={FooterLogo} alt=" main logo" className=" h-20 " />
             </div>
-            <p className="text-2xl text-blue-600 font-bold ">
+            {/* <p className="text-2xl text-blue-600 font-bold ">
               smart home people
-            </p>
-            <p className="my-3 text-[16px] text-white mt-5 mb-10">
+            </p> */}
+            <p className="my-3 text-[16px] text-white mt-5 mb-6">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s,
             </p>
+            <p className="text-[16px] font-medium my-2 ">Connect With Us</p>
 
             <div className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start space-x-2">
               <Single_SocialIcon
@@ -67,15 +68,15 @@ const Footer = () => {
           <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div className="lg:w-2/6 md:w-1/2 w-full px-6">
               <h2 className=" mb-[18px]  text-white text-[18px] font-bold select-none">
-                Quick Links
+                Company
               </h2>
               <nav className="list-none mb-5">
                 <ul className="flex flex-col gap-1 text-white">
-                  <a className="hover:underline" href="">
-                    <li>Our Services</li>
-                  </a>
+                  {/* <a className="hover:underline" href="">
+                    <li>Company</li>
+                  </a> */}
 
-                  <li>
+                  {/* <li>
                     <Link
                       to="/help"
                       className="hover:underline"
@@ -85,31 +86,39 @@ const Footer = () => {
                       {" "}
                       Help
                     </Link>
-                  </li>
+                  </li> */}
+                  <Link
+                    to="/aboutus"
+                    className="hover:underline"
+                    onClick={scrollToTop}
+                    href=""
+                  >
+                    <li>About Us </li>
+                  </Link>
 
                   <li>
                     <Link
-                      to="/privacy_policy"
+                      to="/service"
                       className="hover:underline"
                       onClick={scrollToTop}
                       href=""
                     >
                       {" "}
-                      Privacy Policy
+                      Our Service
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/terms_and_condition"
+                      to="/product"
                       className="hover:underline"
                       onClick={scrollToTop}
                       href=""
                     >
                       {" "}
-                      Terms and condition
+                      Our Product
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       to="/lagel_agreement"
                       className="hover:underline"
@@ -119,66 +128,63 @@ const Footer = () => {
                       {" "}
                       Lagel Agreement
                     </Link>
-                  </li>
+                  </li> */}
 
-                  <Link
-                    to="/aboutus"
-                    className="hover:underline"
-                    onClick={scrollToTop}
-                    href=""
-                  >
-                    <li>About Us </li>
-                  </Link>
-                  <Link
+                  {/* <Link
                     to={"/blog"}
                     className="hover:underline"
                     onClick={scrollToTop}
                     href=""
                   >
                     <li>Blog</li>
-                  </Link>
+                  </Link> */}
 
-                  {/* <Link className="hover:underline" href="">
-										<li>Career</li>
-									</Link> */}
+                  <Link className="hover:underline" to="/contact_us">
+                    <li>Contact Us</li>
+                  </Link>
                 </ul>
               </nav>
             </div>
 
             <div className="lg:w-2/6 md:w-1/2 w-full px-6">
               <Link to="/contact_us" className="font-bold text-lg ">
-                Contact Us
+                Resources
               </Link>
 
               <nav className="list-none mt-3 mb-10">
                 <ul className="flex flex-col gap-[10px] text-white">
                   <a className="hover:underline" href="#">
-                    <li>(02) 9158 8497</li>
+                    <li>Smart Home Guide</li>
                   </a>
                   <a className="hover:underline" href="#">
-                    <li>info@krazyit.com</li>
+                    <li>Projects</li>
                   </a>
                   <a className="hover:underline" href="#">
-                    <li>
-                      Suite no - 25, 4th Floor, Bhuiyan Mansion, 6 Motijheel
-                      C/A, Dhaka - 1000, Bangladesh
-                    </li>
+                    <li>How to - Blog</li>
                   </a>
                 </ul>
               </nav>
             </div>
             <div className="lg:w-2/6 md:w-1/2 w-full px-6">
               <h2 className="mb-[18px]  text-white text-[18px] font-bold select-none">
-                Newsletter
+                Help
               </h2>
               <nav className="list-none mb-10">
                 <ul className="flex flex-col gap-[10px] text-white">
-                  <p>
-                    Subscribe to our newsletter to stay
-                    <br /> up to date on everything Tutor2u
-                  </p>
+                  <Link className="hover:underline" href="">
+                    <li>Customer Support</li>
+                  </Link>
+                  <Link className="hover:underline" href="">
+                    <li>Delivery Details</li>
+                  </Link>
+                  <Link className="hover:underline" href="">
+                    <li>Terms & Conditions</li>
+                  </Link>
+                  <Link className="hover:underline" href="/privacy_policy">
+                    <li>Privacy Policy</li>
+                  </Link>
 
-                  <div>
+                  {/* <div>
                     <form>
                       <label className="mb-2 text-sm font-medium text-white sr-only">
                         Search
@@ -194,25 +200,25 @@ const Footer = () => {
                         />
                         <button
                           type="submit"
-                          className=" absolute right-3.5 bottom-1.5 border-2 border-[#2c6777] rounded-full p-0.5"
+                          className=" absolute right-3.5 bottom-1.5 border-2 border-[#00ABE4] rounded-full p-0.5"
                         >
-                          <BsSendFill size={15} color="#2c6777" />
+                          <BsSendFill size={15} color="#00ABE4" />
                         </button>
                       </div>
                     </form>
-                  </div>
+                  </div> */}
                 </ul>
               </nav>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-green-500">
+      <div className="bg-black opacity-95">
         <div className="container mx-auto py-2 px-5 flex flex-wrap flex-col justify-between sm:flex-row">
-          <p className="text-white  text-sm text-center font-bold sm:text-left">
+          <p className="text-white  text-sm text-center font-normal sm:text-left">
             Copyright © 2023 smart home people ABN Number 20611064601
           </p>
-          <p className="text-white  text-sm font-bold  ">
+          <p className="text-white  text-sm font-normal  ">
             Developed By{" "}
             <a
               href="https://krazyit.com/#"

@@ -24,8 +24,8 @@ const AboutUs_Section = () => {
             <div className="max-w-md border border-black bg-black opacity-50 rounded-2xl p-5 w-[50%] hidden md:block -mt-12 relative bottom-0 -right-[29rem]">
               <div className="p-1">
                 <div className="flex items-center">
-                  <div className="p-3 bg-[#97d4a8] rounded-full shadow-lg">
-                    <FiSearch />
+                  <div className="p-3 bg-[#00ABE4] rounded-full shadow-lg">
+                    <FiSearch className="text-[#ffffff]" />
                   </div>
                   <div className="ml-2 text-white">
                     <p className=" text-xl font-bold">Professional</p>
@@ -37,7 +37,7 @@ const AboutUs_Section = () => {
             {/* https://dummyimage.com/720x600 */}
           </div>
           <div className="z-10">
-            <SpineButton  />
+            <SpineButton />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 py-9  relative ">
             <div className="flex justify-between w-full">

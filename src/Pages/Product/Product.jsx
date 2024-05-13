@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Product_Details from "./Product_Details/Product_Details";
 import NavBar from "../../Components/Shareable_Components/NavBar/NavBar";
+import Footer from "../../Components/Shareable_Components/Footer/Footer";
 
 const Product = () => {
   const [navfix, setNavfix] = useState(false);
@@ -138,6 +139,7 @@ const Product = () => {
         <div className="mt-24">
           <Product_Details addToCart={addToCart} products={products} />
         </div>
+        <Footer/>
       </section>
     </>
   );

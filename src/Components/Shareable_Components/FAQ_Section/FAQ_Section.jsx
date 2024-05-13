@@ -13,10 +13,10 @@ const FAQ_Section = () => {
           </h1> */}
           <h2 className="text-2xl text-center  font-extrabold leading-10 tracking-tight text-gray-800  sm:leading-none md:text-5xl mt-10 mb-10">
             Frequently Asked
-            <span className="font-bold text-[#2DBE61]"> Questions</span>
+            <span className="font-bold text-[#00ABE4]"> Questions</span>
           </h2>
           <div className="container mx-auto">
-            <div className="grid grid-cols-12  gap-4  p-2">
+            <div className="grid grid-cols-12  gap-4  p-2 lg:mx-40 mx-2">
               {/* large div */}
               <div className="col-span-12 lg:col-span-12 mb-6 flex   lg:mb-0">
                 <div>

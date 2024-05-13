@@ -17,7 +17,7 @@ const Summery_Booking_Section = () => {
             <form className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6 bg-slate-100 rounded-lg p-2 shadow-lg">
               <div className="mb-3 w-full">
                 <label
-                  className="block font-medium mb-[2px] text-teal-700"
+                  className="block font-medium mb-[2px] text-[#00ABE4]"
                   htmlFor="exampleInput90"
                 >
                   Name
@@ -32,7 +32,7 @@ const Summery_Booking_Section = () => {
 
               <div className="mb-3 w-full">
                 <label
-                  className="block font-medium mb-[2px] text-teal-700"
+                  className="block font-medium mb-[2px] text-[#00ABE4]"
                   htmlFor="exampleInput90"
                 >
                   Email
@@ -47,7 +47,7 @@ const Summery_Booking_Section = () => {
 
               <div className="mb-3 w-full">
                 <label
-                  className="block font-medium mb-[2px] text-teal-700"
+                  className="block font-medium mb-[2px] text-[#00ABE4]"
                   htmlFor="exampleInput90"
                 >
                   Message
@@ -61,7 +61,7 @@ const Summery_Booking_Section = () => {
 
               <button
                 type="button"
-                className="mb-6 inline-block w-full rounded bg-blue-400 px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-blue-500"
+                className="mb-6 inline-block w-full rounded bg-[#00ABE4] px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-[#00ABE4]"
               >
                 Send
               </button>
@@ -76,7 +76,7 @@ const Summery_Booking_Section = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
                     viewBox="0 0 24 24"
                   >
                     <path d="M8 17l4 4 4-4m-4-5v9"></path>
@@ -96,7 +96,7 @@ const Summery_Booking_Section = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
                     viewBox="0 0 24 24"
                   >
                     <path d="M8 17l4 4 4-4m-4-5v9"></path>
@@ -116,7 +116,7 @@ const Summery_Booking_Section = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
                     viewBox="0 0 24 24"
                   >
                     <path d="M8 17l4 4 4-4m-4-5v9"></path>
@@ -136,7 +136,7 @@ const Summery_Booking_Section = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
                     viewBox="0 0 24 24"
                   >
                     <path d="M8 17l4 4 4-4m-4-5v9"></path>
@@ -156,7 +156,7 @@ const Summery_Booking_Section = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
                     viewBox="0 0 24 24"
                   >
                     <path d="M8 17l4 4 4-4m-4-5v9"></path>
@@ -176,7 +176,7 @@ const Summery_Booking_Section = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
                     viewBox="0 0 24 24"
                   >
                     <path d="M8 17l4 4 4-4m-4-5v9"></path>

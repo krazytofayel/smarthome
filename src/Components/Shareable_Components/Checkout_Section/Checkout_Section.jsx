@@ -19,15 +19,16 @@ const Checkout_Section = () => {
     <>
       <section>
         <div
-          className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out${navfix ? "shadow-lg bg-white" : ""
-            }`}
+          className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out${
+            navfix ? "shadow-lg bg-white" : ""
+          }`}
         >
           <NavBar />
         </div>
         <div className="bg-gray-100 dark:bg-gray-900 mt-[90px] ">
           <div className="w-full  grid grid-cols-12 gap-5 container mx-auto lg:gap-12 p-2 ">
             <div className="bg-white col-span-12 lg:col-span-7 mb-6 lg:mb-0 dark:bg-gray-800  rounded-lg shadow-md border dark:border-gray-700">
-              <h1 className="text-2xl font-bold bg-blue-500 text-white p-2 dark:text-white mb-4">
+              <h1 className="text-2xl font-bold bg-[#00ABE4] text-white p-2 dark:text-white mb-4">
                 Personal Billing Confirmation
               </h1>
               <div className="mb-6 p-8">
@@ -167,32 +168,41 @@ const Checkout_Section = () => {
               </div>
 
               <div className="mt-2 flex justify-end p-8">
-                <button className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-700 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900">
+                <button className="bg-[#00ABE4] text-white font-bold px-4 py-2 rounded-lg hover:bg-[#347286] dark:bg-[00ABE4] dark:text-white dark:hover:bg-teal-900">
                   Place Order
                 </button>
               </div>
             </div>
             <div className="bg-white col-span-12 lg:col-span-4 mb-6 lg:mb-0 dark:bg-gray-800  rounded-lg shadow-md border dark:border-gray-700 h-[500px]">
-              <h1 className="text-2xl font-bold bg-blue-500 text-white p-2 dark:text-white mb-4">
+              <h1 className="text-2xl font-bold bg-[#00ABE4] text-white p-2 dark:text-white mb-4">
                 Personal Billing Confirmation
               </h1>
 
               <div className="p-8">
                 <div className="flex flex-col justify-center items-center ">
                   <div>
-
                     <div className="flex justify-between mb-4">
                       <div className="flex items-center">
-                        <img src="https://via.placeholder.com/80" alt="Product Image" className="mr-4" />
+                        <img
+                          src="https://via.placeholder.com/80"
+                          alt="Product Image"
+                          className="mr-4"
+                        />
                         <div>
                           <h2 className="font-bold">Product Name</h2>
                           <p className="text-gray-700">Product Description</p>
                         </div>
                       </div>
                       <div className="flex items-center">
-                        <button className="text-red-500 hover:text-red-700"><i className="fas fa-trash"></i></button>
+                        <button className="text-red-500 hover:text-red-700">
+                          <i className="fas fa-trash"></i>
+                        </button>
                         <div className="mx-4">
-                          <input type="number" value="1" className="w-16 text-center" />
+                          <input
+                            type="number"
+                            value="1"
+                            className="w-16 text-center"
+                          />
                         </div>
                         <span className="font-bold">$19.99</span>
                       </div>
@@ -212,13 +222,13 @@ const Checkout_Section = () => {
                       <span className="font-bold">$20.99</span>
                     </div>
                     <div className="flex justify-center mt-6">
-                      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Checkout</button>
+                      <button className="bg-[#00ABE4] hover:bg-[#2c5f70] text-white font-bold py-2 px-4 rounded">
+                        Checkout
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>

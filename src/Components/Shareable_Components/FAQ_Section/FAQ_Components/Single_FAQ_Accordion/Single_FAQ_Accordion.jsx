@@ -15,9 +15,13 @@ const Single_FAQ_Accordion = ({
   };
 
   return (
-    <div className="border border-gray-200 rounded mb-5">
+    <div className="border-none border-gray-200 rounded-t-lg mb-5 rounded-b-lg my-8">
       <button
-        className="w-full py-4 px-6 text-left font-semibold text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none"
+        className={`w-full py-4 px-6 text-left font-semibold ${
+          isOpen
+            ? "text-white bg-[#00ABE4]"
+            : "text-black bg-[#ffffff] shadow-xl"
+        } focus:outline-none rounded-t-lg text-[18px]`}
         onClick={toggleAccordion}
       >
         {title}
@@ -26,7 +30,7 @@ const Single_FAQ_Accordion = ({
             isOpen ? "rotate-180" : "rotate-0"
           }`}
         >
-          &#x27F1;
+          &#129175;
         </span>
       </button>
       <div
@@ -34,8 +38,8 @@ const Single_FAQ_Accordion = ({
           isOpen ? "h-auto " : "h-0"
         }`}
       >
-        <div className="p-6">
-          <p className="text-gray-700">{content}</p>
+        <div className="p-6 bg-[#00ABE4] rounded-b-lg  ">
+          <p className=" text-[#fff] text-[16px]">{content}</p>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ const Single_Review_Card = ({ name, description }) => {
         <div className="flex items-center mb-4">
           <img
             className="w-10 h-10 me-4 rounded-full"
-            src="../../../../../../public/images/Home_Page_Images/service-img/service_card-1.avif"
+            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
             alt=""
           />
           <div className="font-medium ">
@@ -59,7 +59,7 @@ const Single_Review_Card = ({ name, description }) => {
             </div>
           </div>
         </div>
-        <p className="text-sm font-normal ">{description}</p>
+        <p className="text-sm font-normal">{description}</p>
       </section>
     </>
   );
