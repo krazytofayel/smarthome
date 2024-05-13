@@ -31,10 +31,10 @@ const Single_Product_Card = ({ product, postId, addToCart }) => {
             <div className="hover:bg-transparent rounded-2xl transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
             {product.discount && (
               <span
-                className={`discount-tag rounded-lg right-0 top-0 mr-2 mt-2 px-2 py-1 bg-red-500 text-white absolute ${
+                className={`discount-tag rounded-lg right-0 top-0 mr-2 mt-2 px-2 py-1 bg-[#00ABE4] text-white absolute ${
                   isHighDiscount
-                    ? "transition transform duration-700 animate-pulse font-bold bg-gradient-to-r from-red-500 to-pink-500"
-                    : "bg-red-500"
+                    ? "transition transform duration-700 animate-pulse font-bold bg-gradient-to-r from-[#00ABE4] to-[#0a789c]"
+                    : "bg-[#00ABE4]"
                 }`}
               >
                 {product.discount}% OFF
@@ -45,7 +45,7 @@ const Single_Product_Card = ({ product, postId, addToCart }) => {
         <div className="px-6">
           <a
             href="#"
-            className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
+            className=" pt-4 pb-2 font-semibold text-xl inline-block hover:text-[#00ABE4] transition duration-500 ease-in-out"
           >
             {product.name}
           </a>
@@ -74,18 +74,20 @@ const Single_Product_Card = ({ product, postId, addToCart }) => {
                 </g>
               </g>
             </svg>
-            <span className="ml-1">{timeDifferenceHours} hours ago</span>
+            <span className="ml-1 ">{timeDifferenceHours} hours ago</span>
             {product.discount ? (
               <>
-                <del className="ml-1">${product.price}</del>
-                <span className="ml-1">${discountedPrice.toFixed(2)}</span>
+                <del className="ml-1 text-[#00ABE4]">${product.price}</del>
+                <span className="ml-1 text-red-500">
+                  ${discountedPrice.toFixed(2)}
+                </span>
               </>
             ) : (
-              <span className="ml-1">${product.price}</span>
+              <span className="ml-1 text-[#00ABE4]">${product.price}</span>
             )}
           </span>
           <button
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="m-4 text-white bg-[#00ABE4] hover:bg-[#397f96] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-[#00ABE4] dark:hover:bg-[#00ABE4] focus:outline-none dark:focus:ring-[#00ABE4]"
             type="button"
             onClick={handleAddToCart} // Call handleAddToCart function when the button is clicked
             //onClick={addToCart}
@@ -138,13 +140,13 @@ const Single_Product_Card = ({ product, postId, addToCart }) => {
             <div className="grid grid-cols-2 gap-4">
               <a
                 href="#"
-                className="px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                className=" m-4 px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-[#00ABE4] focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
               >
                 Learn more
               </a>
               <a
                 href="#"
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-[#00ABE4] rounded-lg hover:bg-[#00ABE4] focus:ring-4 focus:ring-blue-300 dark:bg-[#00ABE4] dark:hover:bg-[#00ABE4] focus:outline-none dark:focus:ring-[#00ABE4]"
               >
                 Get access{" "}
                 <svg

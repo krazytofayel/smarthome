@@ -73,7 +73,7 @@ const Product_Details = ({ addToCart, products }) => {
           <div className="container mx-auto grid grid-cols-12">
             <div className="col-span-12 lg:col-span-3">
               <div>
-                <div className=" border-blue-400 border-l-8">
+                <div className=" border-[#71d0f0] border-l-8">
                   <Secondary_Title_Section
                     secondary_title={"Product Category"}
                   />
@@ -82,7 +82,7 @@ const Product_Details = ({ addToCart, products }) => {
                   <Product_Category />
                 </div>
                 <div className="mt-5">
-                  <div className=" border-blue-400 border-l-8">
+                  <div className=" border-[#71d0f0] border-l-8">
                     <Secondary_Title_Section
                       secondary_title={"Product Price"}
                     />

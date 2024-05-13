@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Link } from "react-router-dom";
-import navlogo from "../../../../public/images/Logo.png";
+import navlogo from "../../../../public/images/Nav_Images/nav-logo.png";
 import { motion } from "framer-motion";
 import { FaShoppingBag } from "react-icons/fa";
 import QuantityCounter from "../QuantityCounter _Section/QuantityCounter";
@@ -62,11 +62,14 @@ const NavBar = ({ cartCount, clickedProducts }) => {
               }}
             >
               {" "}
-              <img
-                src={navlogo}
-                alt=" main logo"
-                className="w-[7rem] h-12  drop-shadow-xl"
-              />
+              <a href="/">
+                {" "}
+                <img
+                  src={navlogo}
+                  alt=" main logo"
+                  className="w-[8rem]  drop-shadow-xl"
+                />{" "}
+              </a>
               {/* <h1>Smart home people</h1> */}
             </motion.div>
           </div>
@@ -93,8 +96,11 @@ const NavBar = ({ cartCount, clickedProducts }) => {
                 className="md:ml-4 md:text-[11px] truncate md:my-0 my-7 lg:text-lg relative group"
                 whileHover={{ scale: 1.1 }}
               >
-                <span className="absolute inset-x-0 bottom-0 h-.5 bg-[#089bab] border-b border-transparent transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
-                <Link to={link.link} className="duration-500 font-bold">
+                <span className="absolute inset-x-0 bottom-0 h-.5 bg-[#00ABE4] border-b border-transparent transition-all duration-300 opacity-0 group-hover:opacity-100 hover:text-[#00ABE4]"></span>
+                <Link
+                  to={link.link}
+                  className="duration-500 font-bold hover:text-[#00ABE4] text-gray-600"
+                >
                   {link.name}
                 </Link>
               </motion.li>
@@ -118,21 +124,22 @@ const NavBar = ({ cartCount, clickedProducts }) => {
               open ? "right-19" : "hidden"
             }`}
           >
-            <button className="bg-[#d6e5f1] text-[#2c6777] md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
-              <Link to="/booking">Booking now</Link>
+            <button className=" text-[#00ABE4] md:text-[11px] lg:text-[18px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
+              <Link to="/booking">Login</Link>
             </button>
-            <button className="bg-green-500 text-white md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
-              <Link to="/sign_in">Sign up</Link>
+            {/* bg-transparent hover:bg-[#00ABE4] text-[#00ABE4] font-semibold hover:text-white py-2 px-4 border border-[#00ABE4] hover:border-transparent rounded */}
+            <button className="bg-transparent hover:bg-[#00ABE4] text-[#00ABE4]  hover:text-white  border border-[#00ABE4] hover:border-transparent rounded-lg md:text-[11px] lg:text-[18px] px-3 pb-2 pt-1   font-semibold lg:font-medium truncate">
+              <Link to="/">Sign up</Link>
             </button>
 
             <button
               type="button"
               onClick={() => setIsDrawerOpen(!isDrawerOpen)} // Toggle drawer visibility
-              className="relative inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="relative inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-[#00ABE4] rounded-lg hover:bg-[#35768b] focus:ring-4 focus:outline-none focus:ring-[#9de0f7] dark:bg-[#00ABE4] dark:hover:bg-[#3f6875] dark:focus:ring-[#00ABE4]"
             >
-              <FaShoppingBag />
+              <FaShoppingBag  />
               {cartCount > 0 && ( // Only show the count if cartCount is greater than 0
-                <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                <div className=" py-2 absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
                   {cartCount}
                 </div>
               )}
@@ -150,7 +157,7 @@ const NavBar = ({ cartCount, clickedProducts }) => {
               <button
                 type="button"
                 onClick={() => setIsDrawerOpen(false)} // Close drawer
-                className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
+                className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-6 h-6 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 <svg
                   className="w-3 h-3"
@@ -231,12 +238,15 @@ const NavBar = ({ cartCount, clickedProducts }) => {
                       </div>
                     </div>
                   ))}
-                  <p className="text-xs leading-3 underline text-red-500 pl-5 mt-20 cursor-pointer">
+                  <p className="text-lg leading-3 underline text-red-500 pl-5 mt-20 cursor-pointer">
                     total: ${totalAmount.toFixed(2)}
                   </p>
-                  <Link to={"/checkout"}>
+                  <Link to={"/checkout"} className="py-3 text-lg">
                     {" "}
-                    <Global_Button_Section button_text={"checkout"} />
+                    <Global_Button_Section
+                      button_text={"checkout"}
+                      className="text-xl"
+                    />
                   </Link>
                 </div>
               )}

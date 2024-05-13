@@ -4,6 +4,7 @@ const AboutUs_ProfileCard = () => {
   return (
     <>
       <section>
+        <div className=" text-[35px] text-[#00ABE4] font-bold text-center my-10">Our Team</div>
         <div>
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-5">
             <Single_Profile_Card

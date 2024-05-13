@@ -1,4 +1,5 @@
 import Service_Single_Card from "./Service_Single_Card/Service_Single_Card";
+// import PCard from "../../../../../../public/images/Home_Page_Images/service_img/modern-living-card1.png";
 
 const Service_Card_Section = () => {
   return (
@@ -7,21 +8,22 @@ const Service_Card_Section = () => {
         <Service_Single_Card
           title="Smart Home Installation"
           body_text="Installation of smart devices, including thermostats, lighting systems, and entertainment systems, ensuring they are properly configured and integrated into your home network."
-          src_link="../../../../../../public/images/Home_Page_Images/service-img/service_card-1.avif"
+          src_link="../../../../../../public/images/Home_Page_Images/service_img/modern-living-card1.png" 
+          // src={PCard1}
         />
         <Service_Single_Card
-          title="Smart Home Installation"
-          body_text="Installation of smart devices, including thermostats, lighting systems, and entertainment systems, ensuring they are properly configured and integrated into your home network."
-          src_link="../../../../../../public/images/Home_Page_Images/service-img/service_card-2.avif"
+          title="Home Security Integration"
+          body_text="Assess your property's vulnerabilities and design a customized security system tailored to your needs."
+          src_link="..../../../../../../public/images/Home_Page_Images/service_img/modern-living-card2.png"
         />
         <Service_Single_Card
-          title="Smart Home Installation"
-          body_text="Installation of smart devices, including thermostats, lighting systems, and entertainment systems, ensuring they are properly configured and integrated into your home network."
-          src_link="../../../../../../public/images/Home_Page_Images/service-img/service_card-3.avif"
+          title="Smart Home Consultation"
+          body_text="Personalized guidance and expertise to help you make informed decisions about your smart home technology."
+          src_link="../../../../../../public/images/Home_Page_Images/service_img/modern-living-card3.png"
         />
       </div>{" "}
       <div className="flex justify-center">
-        <button className=" border px-9 py-2 rounded bg-green-400 text-white font-bold mx-auto ">
+        <button className=" border px-9 py-2 rounded bg-[#00ABE4] text-white font-bold mx-auto ">
           See more
         </button>
       </div>

@@ -31,7 +31,7 @@ const AboutUs_Mission_Vission = () => {
               </div>
               <div className="flex flex-row w-full justify-between">
                 <div className=" lg:col-start-2 max-w-md">
-                  <h4 className="mt-2 text-md font-bold leading-2 text-blue-500 ">
+                  <h4 className="mt-2 text-md font-bold leading-2 text-[#00ABE4] ">
                     Our Mission
                   </h4>
 
@@ -39,7 +39,7 @@ const AboutUs_Mission_Vission = () => {
                     <li className="flex items-start lg:col-span-1">
                       <div className="flex-shrink-0">
                         <svg
-                          className="w-5 h-5 text-indigo-600"
+                          className="w-5 h-5 text-[#00ABE4]"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -58,7 +58,7 @@ const AboutUs_Mission_Vission = () => {
                   </ul>
                 </div>
                 <div className=" lg:col-start-2 max-w-md">
-                  <h4 className="mt-2 text-md font-bold leading-2 text-blue-500 ">
+                  <h4 className="mt-2 text-md font-bold leading-2 text-[#00ABE4] ">
                     Our Mission
                   </h4>
 
@@ -66,7 +66,7 @@ const AboutUs_Mission_Vission = () => {
                     <li className="flex items-start lg:col-span-1">
                       <div className="flex-shrink-0">
                         <svg
-                          className="w-5 h-5 text-indigo-600"
+                          className="w-5 h-5 text-[#00ABE4]"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >

@@ -19,12 +19,12 @@ const Home_Main_Section = () => {
           <div className=" grid  grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 ">
               <section className="w-full  ">
-                <div className="max-w-7xl mx-auto py-5 px-4 ">
+                <div className=" mx-auto py-5 px-4 ">
                   <div className=" ">
-                    <p className="sm:mt-10 text-6xl sm:calm:text-5xl md:calm:text-6xl lg:calm:text-7xl xl:calm:text-8xl max-w-lg font-extrabold text-gray-900 sm:tracking-tight">
+                    <p className="sm:mt-10 2xl:[95px] xl:text-[65px] lg:text-[50px] md:text-[50px] text-[30px]  font-extrabold text-gray-900 sm:tracking-tight">
                       <span className="relative inline-block">
                         <svg
-                          className="stroke-current bottom-0 absolute text-blue-500 -translate-x-2"
+                          className="stroke-current bottom-0 absolute text-[#00ABE4] -translate-x-2"
                           viewBox="0 0 410 18"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -36,11 +36,11 @@ const Home_Main_Section = () => {
                             strokeLinecap="round"
                           ></path>
                         </svg>
-                        <span className="relative mr-2">Modernize </span>
+                        <span className="relative mr-4">Modernize </span>
                       </span>
                       your home with smart automation systems.
                     </p>
-                    <p className=" mt-5  text-xl text-gray-500 mb-5">
+                    <p className=" mt-5 lg:text-3xl text-xl text-gray-500 mb-10">
                       Let's create a future where automation, comfort, security,
                       and hope thrive together. Welcome to Smart Home People.
                     </p>
@@ -52,11 +52,11 @@ const Home_Main_Section = () => {
               </section>
             </div>
             <div className="w-full ">
-              <div className="mt-10  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 ">
-                <div className="col-span-2 sm:col-span-1 md:col-span-1 h-[31.5rem]">
+              <div className="mt-16  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 ">
+                <div className="col-span-2 sm:col-span-1 md:col-span-1 h-[42.5rem]">
                   <a
                     href="#"
-                    className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4 h-[15.5rem]"
+                    className="group relative flex flex-col overflow-hidden rounded-[30px] px-4 pb-4 pt-40 mb-4 h-[24rem]"
                   >
                     <img
                       src={grid2}
@@ -68,7 +68,7 @@ const Home_Main_Section = () => {
 
                   <a
                     href="#"
-                    className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 h-[15rem]"
+                    className="group relative flex flex-col overflow-hidden rounded-[30px] px-4 pb-4 pt-40 h-[17.5rem]"
                   >
                     <img
                       src={grid1}
@@ -81,7 +81,7 @@ const Home_Main_Section = () => {
                 <div className="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50  md:h-full flex flex-col h-[50rem]">
                   <a
                     href="#"
-                    className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
+                    className="group relative flex flex-col overflow-hidden rounded-[30px] px-4 pb-4 pt-40 flex-grow"
                   >
                     <img
                       src={grid3}

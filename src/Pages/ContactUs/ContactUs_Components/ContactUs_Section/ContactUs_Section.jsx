@@ -10,7 +10,7 @@ const ContactUs_Section = () => {
               Contact
             </p>
             <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
-              Get In <span className="text-indigo-600">Touch</span>
+              Get In <span className="text-[#00ABE4]">Touch</span>
             </h3>
             <p className="mt-4 leading-7 text-gray-200">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -20,7 +20,7 @@ const ContactUs_Section = () => {
 
             <div className="flex items-center mt-5">
               <svg
-                className="h-6 mr-2 text-indigo-600"
+                className="h-6 mr-2 text-[#00ABE4]"
                 fill="currentColor"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const ContactUs_Section = () => {
             </div>
             <div className="flex items-center mt-5">
               <svg
-                className="h-6 mr-2 text-indigo-600"
+                className="h-6 mr-2 text-[#00ABE4]"
                 fill="currentColor"
                 version="1.1"
                 id="Capa_1"
@@ -100,7 +100,7 @@ const ContactUs_Section = () => {
             </div>
             <div className="flex items-center mt-5">
               <svg
-                className="h-6 mr-2 text-indigo-600"
+                className="h-6 mr-2 text-[#00ABE4]"
                 fill="currentColor"
                 version="1.1"
                 id="Capa_1"
@@ -135,12 +135,12 @@ const ContactUs_Section = () => {
                   First Name
                 </label>
                 <input
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-[#00ABE4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="grid-first-name"
                   type="text"
                   placeholder="Jane"
                 />
-                <p className="text-red-500 text-xs italic">
+                <p className="text-[#00ABE4] text-xs italic">
                   Please fill out this field.
                 </p>
               </div>
@@ -197,7 +197,7 @@ const ContactUs_Section = () => {
                   </label>
                 </div>
                 <button
-                  className="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                  className="shadow bg-[#00ABE4] hover:bg-[#3b7a8f] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
                   type="submit"
                 >
                   Send Message

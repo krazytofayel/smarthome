@@ -6,7 +6,7 @@ import AnimatedStatsCard from "./AnimatedStatsCard/AnimatedStatusCard";
 const Statistics = () => {
   return (
     <>
-      <div className="bg-gradient-to-t from-[#cdffdb] to-transparent rounded-lg">
+      <div className="bg-gradient-to-t from-[#aed6e4] to-transparent rounded-lg">
         <div className="flex justify-center lg:justify-start items-center ">
           <div className="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-3 gap-4 mb-4 mt-5 w-full">
             <div>
@@ -27,7 +27,7 @@ const Statistics = () => {
             <div>
               <div className="box">
                 <form name="search">
-                  <input type="text" className="input" name="txt" />
+                  <input type="text" className="input "name="txt" />
                 </form>
                 <FiSearch className="icon" />
               </div>

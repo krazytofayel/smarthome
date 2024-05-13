@@ -11,12 +11,12 @@ const Service_Section_Upperpart = () => {
             transition={{ ease: "easeInOut", duration: 1 }}
             className="text-left"
           >
-            <h2 className="text-xl font-extrabold leading-10 tracking-tight text-[#2DBE61] ">
+            <h2 className="text-xl font-extrabold leading-10 tracking-tight text-[#00ABE4] ">
               Our Service
             </h2>
             <h2 className="text-2xl max-w-md lg:max-w-lg font-extrabold leading-10 tracking-tight text-gray-800  sm:leading-none md:text-4xl lg:text-5xl">
               Smart Home Services for
-              <span className="font-bold text-[#2DBE61] transition-all duration-1000 animate-pulse ">
+              <span className="font-bold text-[#00ABE4] transition-all duration-1000 animate-pulse ">
                 {" "}
                 Modern Living
               </span>

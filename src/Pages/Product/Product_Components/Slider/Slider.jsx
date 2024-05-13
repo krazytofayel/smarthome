@@ -33,7 +33,7 @@ export default function Slider({ slides }) {
                 <p className="text-lg max-w-lg text-white mb-8">
                   {slide.description}
                 </p>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                <button className="bg-[#00ABE4] text-white px-4 py-2 rounded hover:bg-[#30697c]">
                   {slide.buttonText}
                 </button>
               </div>
