@@ -1,5 +1,3 @@
-
-
 const Why_ChoosUs_Single_Card = ({ title, sort_description }) => {
   return (
     <>
@@ -56,4 +54,4 @@ const Why_ChoosUs_Single_Card = ({ title, sort_description }) => {
   );
 };
 
-export default Why_ChoosUs_Single_Card
+export default Why_ChoosUs_Single_Card;
