@@ -3,7 +3,7 @@ import Secondary_Title_Section from "../../../../Components/Shareable_Components
 const Howit_Work_Upper_Section = () => {
   return (
     <>
-      <section className="container mx-auto flex justify-between gap-10">
+      <section className="container mx-auto flex flex-col md:flex-row justify-between gap-10">
         <div className="relative overflow-hidden rounded-lg  p-2">
           <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
             <div className="space-y-2">
@@ -15,7 +15,7 @@ const Howit_Work_Upper_Section = () => {
           </div>
         </div>
 
-        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2  md:grid-cols-3">
+        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2  md:grid-cols-3 p-2 md:p-0">
           <div className="relative overflow-hidden rounded-lg border bg-gray-100/50 p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <svg
@@ -25,9 +25,9 @@ const Howit_Work_Upper_Section = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className=""
               >
                 <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
@@ -49,9 +49,9 @@ const Howit_Work_Upper_Section = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className=""
               >
                 <circle cx="12" cy="12" r="10"></circle>
@@ -76,9 +76,9 @@ const Howit_Work_Upper_Section = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className=""
               >
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>

@@ -17,21 +17,19 @@ const AboutUs = () => {
         "text-sm font-medium text-white hover:text-blue-600 md:ms-2 ",
       icon: "arrow",
     },
-   
   ];
 
+  const [navfix, setNavfix] = useState(false);
 
-    const [navfix, setNavfix] = useState(false);
-
-    function setFixed() {
-      if (window.scrollY >= 70) {
-        setNavfix(true);
-        //console.log(scrollY)
-      } else {
-        setNavfix(false);
-      }
+  function setFixed() {
+    if (window.scrollY >= 70) {
+      setNavfix(true);
+      //console.log(scrollY)
+    } else {
+      setNavfix(false);
     }
-    window.addEventListener("scroll", setFixed);
+  }
+  window.addEventListener("scroll", setFixed);
   return (
     <>
       <div
@@ -42,7 +40,7 @@ const AboutUs = () => {
         <NavBar />
       </div>
       <div className="mt-20">
-        <div className="bg-cover bg-center bg-no-repeat bg-contact-us-img  bg-blend-multiply h-[25rem] mt-20 mb-1">
+        <div className="bg-cover bg-center bg-no-repeat bg-contact-us-img  bg-blend-multiply h-[25rem] mt-20 mb-1 p-2 md:p-0">
           <div className="container mx-auto ">
             <div className=" flex flex-col justify-start ">
               <DynamicHeading />
@@ -56,7 +54,6 @@ const AboutUs = () => {
           <AboutUs_Mission_Vission />
           <HowIt_Work_Section />
           <div className=" flex justify-center  items-center  ">
-            {" "}
             <AboutUs_ProfileCard />
           </div>
         </div>
