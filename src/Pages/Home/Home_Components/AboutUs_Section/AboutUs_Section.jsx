@@ -9,13 +9,13 @@ import AboutUs_Card from "./AboutUs_Component/AboutUs_Card/AboutUs_Card";
 const AboutUs_Section = () => {
   return (
     <>
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col w-full ">
-          <div className="">
+      <section className="text-gray-600">
+        <div className="container mx-auto flex gap-10 px-5 py-24 md:flex-row flex-col justify-center items-center md:items-start  ">
+          <div>
             <div className="bg-[#EBEBEB] rounded-[45px] shadow-lg  ">
-              <div className="p-5  ">
+              <div className="p-7  ">
                 <img
-                  className="object-cover object-center rounded-lg ml-10 h-full w-full "
+                  className="object-cover object-center rounded-lg ml-10  "
                   alt="hero"
                   src={aboutimg}
                 />
@@ -24,9 +24,9 @@ const AboutUs_Section = () => {
 
             {/* https://dummyimage.com/720x600 */}
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 py-9   ">
+          <div className="lg:flex-grow md:w-1/2  py-9   ">
             <Secoundary_Title_Section secondary_title={"About Us"} />
-     
+
             <div className="mt-5 mb-5">
               <Main_Title_Section
                 main_title={"The core mission behind all our work"}
@@ -40,37 +40,9 @@ const AboutUs_Section = () => {
                 }
               />
             </div>
-
-            <div className="border-2 border-dashed p-2 rounded mt-10 ">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5">
-                <AboutUs_Card
-                  icon={
-                    <>
-                      <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                      <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                    </>
-                  }
-                  text="managed Centrally"
-                />
-                <AboutUs_Card
-                  icon={
-                    <>
-                      <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                      <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                    </>
-                  }
-                  text="Wireless connects"
-                />
-                <AboutUs_Card
-                  icon={
-                    <>
-                      <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                      <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                    </>
-                  }
-                  text="Smart applications"
-                />
-              </div>
+            <div>
+              {" "}
+              <AboutUs_Card />
             </div>
           </div>
         </div>
