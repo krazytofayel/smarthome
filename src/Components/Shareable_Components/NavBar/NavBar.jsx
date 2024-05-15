@@ -67,7 +67,7 @@ const NavBar = ({ cartCount, clickedProducts }) => {
                 <img
                   src={navlogo}
                   alt=" main logo"
-                  className="w-[8rem]  drop-shadow-xl"
+                  className="w-[5rem]  drop-shadow-xl"
                 />{" "}
               </a>
               {/* <h1>Smart home people</h1> */}
@@ -125,7 +125,7 @@ const NavBar = ({ cartCount, clickedProducts }) => {
             }`}
           >
             <button className=" text-[#00ABE4] md:text-[11px] lg:text-[18px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
-              <Link to="/booking">Login</Link>
+              <Link to="/booking">Booking</Link>
             </button>
             {/* bg-transparent hover:bg-[#00ABE4] text-[#00ABE4] font-semibold hover:text-white py-2 px-4 border border-[#00ABE4] hover:border-transparent rounded */}
             <button className="bg-transparent hover:bg-[#00ABE4] text-[#00ABE4]  hover:text-white  border border-[#00ABE4] hover:border-transparent rounded-lg md:text-[11px] lg:text-[18px] px-3 pb-2 pt-1   font-semibold lg:font-medium truncate">

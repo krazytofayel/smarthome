@@ -118,7 +118,7 @@ const Footer = () => {
                       Our Product
                     </Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link
                       to="/lagel_agreement"
                       className="hover:underline"
@@ -128,16 +128,16 @@ const Footer = () => {
                       {" "}
                       Lagel Agreement
                     </Link>
-                  </li> */}
+                  </li>
 
-                  {/* <Link
+                  <Link
                     to={"/blog"}
                     className="hover:underline"
                     onClick={scrollToTop}
                     href=""
                   >
                     <li>Blog</li>
-                  </Link> */}
+                  </Link>
 
                   <Link className="hover:underline" to="/contact_us">
                     <li>Contact Us</li>
@@ -156,12 +156,22 @@ const Footer = () => {
                   <a className="hover:underline" href="#">
                     <li>Smart Home Guide</li>
                   </a>
-                  <a className="hover:underline" href="#">
-                    <li>Projects</li>
-                  </a>
-                  <a className="hover:underline" href="#">
-                    <li>How to - Blog</li>
-                  </a>
+                  <Link
+                    to={"/project"}
+                    className="hover:underline"
+                    onClick={scrollToTop}
+                    href=""
+                  >
+                    <li>Project</li>
+                  </Link>
+                  <Link
+                    to={"/blog"}
+                    className="hover:underline"
+                    onClick={scrollToTop}
+                    href=""
+                  >
+                    <li>Blog</li>
+                  </Link>
                 </ul>
               </nav>
             </div>
@@ -177,10 +187,19 @@ const Footer = () => {
                   <Link className="hover:underline" href="">
                     <li>Delivery Details</li>
                   </Link>
-                  <Link className="hover:underline" href="">
+                  <Link
+                    className="hover:underline"
+                    onClick={scrollToTop}
+                    to={"/terms_and_condition"}
+                  >
                     <li>Terms & Conditions</li>
                   </Link>
-                  <Link className="hover:underline" href="/privacy_policy">
+                  <Link
+                    to={"/privacy_policy"}
+                    className="hover:underline"
+                    onClick={scrollToTop}
+                    href=""
+                  >
                     <li>Privacy Policy</li>
                   </Link>
 
@@ -216,7 +235,7 @@ const Footer = () => {
       <div className="bg-black opacity-95">
         <div className="container mx-auto py-2 px-5 flex flex-wrap flex-col justify-between sm:flex-row">
           <p className="text-white  text-sm text-center font-normal sm:text-left">
-            Copyright © 2023 smart home people ABN Number 20611064601
+            Copyright © 2023 smart home people ABN Number 20611064601 
           </p>
           <p className="text-white  text-sm font-normal  ">
             Developed By{" "}

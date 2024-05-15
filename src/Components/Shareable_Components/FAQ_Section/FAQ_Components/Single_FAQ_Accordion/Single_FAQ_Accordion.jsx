@@ -1,6 +1,3 @@
-
-
-
 const Single_FAQ_Accordion = ({
   title,
   content,
@@ -16,8 +13,8 @@ const Single_FAQ_Accordion = ({
 
   return (
     <div className="border-none border-gray-200 rounded-t-lg mb-5 rounded-b-lg my-8">
-      <button
-        className={`w-full py-4 px-6 text-left font-semibold ${
+      <div
+        className={`w-full py-4 px-6 text-left font-semibold flex justify-between items-center align-middle ${
           isOpen
             ? "text-white bg-[#00ABE4]"
             : "text-black bg-[#ffffff] shadow-xl"
@@ -32,20 +29,18 @@ const Single_FAQ_Accordion = ({
         >
           &#129175;
         </span>
-      </button>
+      </div>
       <div
         className={`overflow-hidden transition-height  ${
-          isOpen ? "h-auto " : "h-0"
+          isOpen ? "h-auto " : "h-0 "
         }`}
       >
-        <div className="p-6 bg-[#00ABE4] rounded-b-lg  ">
+        <div className="p-5 bg-[#00ABE4] rounded-b-lg  border-black border-t-2 ">
           <p className=" text-[#fff] text-[16px]">{content}</p>
         </div>
       </div>
     </div>
   );
 };
-
-
 
 export default Single_FAQ_Accordion;

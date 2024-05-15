@@ -3,11 +3,11 @@ import grid2 from "../../../../../public/images/Home_Page_Images/home_grid-img2.
 import grid3 from "../../../../../public/images/Home_Page_Images/home_grid-img3.png";
 import Statistics from "../Statistics/Statistics";
 
-
 const Home_Main_Section = () => {
   return (
     <>
       <section className="overflow-hidden bg-white py-8 sm:py-16 mt-5">
+        {/* gradient effect start */}
         <div
           aria-hidden="true"
           className="absolute inset-0 top-32 h-max w-full m-auto grid grid-cols-2 gap-20 md:gap-60 opacity-40"
@@ -15,13 +15,14 @@ const Home_Main_Section = () => {
           <div className="blur-[106px] h-56 bg-gradient-to-br from-primary-500 to-purple-400"></div>
           <div className="blur-[106px] h-56 bg-gradient-to-r from-cyan-400 to-sky-300"></div>
         </div>
+        {/* gradient effect end */}
         <div className="mx-auto container ">
-          <div className=" grid  grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className=" grid  grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 first-line:">
             <div className="lg:pr-8 ">
               <section className="w-full  ">
                 <div className=" mx-auto py-5 px-4 ">
-                  <div className=" ">
-                    <p className="sm:mt-10 2xl:[95px] xl:text-[65px] lg:text-[50px] md:text-[50px] text-[30px]  font-extrabold text-gray-900 sm:tracking-tight">
+                  <div>
+                    <p className="mt-14 2xl:[95px] xl:text-[65px] lg:text-[50px] md:text-[50px] text-[30px]  font-extrabold text-gray-900 sm:tracking-tight">
                       <span className="relative inline-block">
                         <svg
                           className="stroke-current bottom-0 absolute text-[#00ABE4] -translate-x-2"
@@ -40,7 +41,7 @@ const Home_Main_Section = () => {
                       </span>
                       your home with smart automation systems.
                     </p>
-                    <p className=" mt-5 lg:text-3xl text-xl text-gray-500 mb-10">
+                    <p className=" mt-5 lg:text-3xl text-xl text-gray-600  mb-10">
                       Let's create a future where automation, comfort, security,
                       and hope thrive together. Welcome to Smart Home People.
                     </p>
@@ -52,7 +53,7 @@ const Home_Main_Section = () => {
               </section>
             </div>
             <div className="w-full ">
-              <div className="mt-16  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 ">
+              <div className="mt-16  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 justify-center items-center p-2 md:p-0">
                 <div className="col-span-2 sm:col-span-1 md:col-span-1 h-[42.5rem]">
                   <a
                     href="#"
