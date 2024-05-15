@@ -9,16 +9,21 @@ import productimg4 from "../../../../../public/images/Home_Page_Images/Product_P
 const Our_Product_Section = () => {
   return (
     <>
-      <section className="container mx-auto">
-        <div className="flex flex-col justify-center items-center">
-          <Secondary_Title_Section secondary_title={"Our Products"} />
-          <Main_Title_Section
-            main_title={"Elevate Your Lifestyle with Smart Home People"}
+      <section className="container mx-auto  px-4 space-y-6 py-8 md:py-12 lg:py-20">
+        <div className="flex flex-col justify-center items-center mb-10">
+          <Secondary_Title_Section
+            secondary_title={"Our Products"}
+            active={"active"}
           />
+          <div className="text-xl max-w-5xl text-center font-semibold">
+            <Main_Title_Section
+              main_title={"Elevate Your Lifestyle with Smart Home People"}
+            />
+          </div>
         </div>
 
-        <div className="flex justify-center mt-10">
-          <div className="  grid grid-cols-2 gap-20 justify-center items-center align-middle mt-15">
+        <div className="flex justify-center ">
+          <div className="  grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center align-middle mt-15">
             <div>
               <Product_Single_Card
                 name={"SMART SECURITY CAMERA"}
@@ -48,7 +53,6 @@ const Our_Product_Section = () => {
               />
             </div>
           </div>
-          
         </div>
       </section>
     </>
