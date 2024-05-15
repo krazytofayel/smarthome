@@ -10,7 +10,7 @@ import Service_Section from "./Home_Components/Service_Section/Service_Section";
 import Review_Section from "./Home_Components/Review_Section/Review_Section";
 import FAQ_Section from "../../Components/Shareable_Components/FAQ_Section/FAQ_Section";
 import Footer from "../../Components/Shareable_Components/Footer/Footer";
-import OgImage from '../../../public/images/Nav_Images/OG_image.png'
+import OgImage from "../../../public/images/Nav_Images/OG_image.png";
 
 const Home = () => {
   const [navfix, setNavfix] = useState(false);
@@ -42,11 +42,12 @@ const Home = () => {
         </Helmet>
       </div> */}
       <Home_Main_Section />
-      <AboutUs_Section /> 
-      {/* <Why_ChooseUs_Section /> */}
-      {/* <Service_Section /> */}
-      {/* <Review_Section /> */}
-      {/* <Our_Product_Section /> */}
+      <AboutUs_Section />
+      <Why_ChooseUs_Section />
+      <Service_Section />
+      <Our_Product_Section />
+      <Review_Section />
+
       <FAQ_Section />
       <Footer />
     </>

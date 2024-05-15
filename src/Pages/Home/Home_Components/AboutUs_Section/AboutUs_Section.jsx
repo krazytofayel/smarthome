@@ -25,7 +25,7 @@ const AboutUs_Section = () => {
             {/* https://dummyimage.com/720x600 */}
           </div>
           <div className="lg:flex-grow md:w-1/2  py-9   ">
-            <Secoundary_Title_Section secondary_title={"About Us"} />
+            <Secoundary_Title_Section secondary_title={"About Us"} active={'active'} />
 
             <div className="mt-5 mb-5">
               <Main_Title_Section

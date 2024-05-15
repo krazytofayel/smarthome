@@ -8,15 +8,11 @@ const Product_Single_Card = ({ name, price, productimgsrc }) => {
           </a>
           <div className="p-2 border border-dashed rounded-lg">
             <div className="flex items-center justify-between">
-              <span className="text-sm font-bold text-gray-900 dark:text-white">
-                {name}
-              </span>
-              <span className="text-sm font-bold text-gray-900 dark:text-white">
-                {price}
-              </span>
+              <span className="text-sm font-bold text-gray-900 ">{name}</span>
+              <span className="text-sm font-bold text-gray-900 ">{price}</span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <span className="text-sm font-bold text-gray-900 dark:text-white">
+              <span className="text-sm font-bold text-gray-900 ">
                 <div className="flex items-center mt-2.5 ">
                   <div className="flex items-center space-x-1 rtl:space-x-reverse">
                     <svg
@@ -70,9 +66,7 @@ const Product_Single_Card = ({ name, price, productimgsrc }) => {
                   </span>
                 </div>
               </span>
-              <span className="text-sm font-bold text-gray-900 dark:text-white">
-                Buy
-              </span>
+              <span className="text-sm font-medium text-blue-800 ">Buy</span>
             </div>
           </div>
         </div>

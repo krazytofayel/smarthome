@@ -1,3 +1,4 @@
+import Secondary_Title_Section from "../../../../../Components/Shareable_Components/Secondary_Title_Section/Secondary_Title_Section";
 import Single_Review_Card from "./Single_Review_Card/Single_Review_Card";
 
 const Review_Card_Section = () => {
@@ -7,13 +8,19 @@ const Review_Card_Section = () => {
         <div className="container mx-auto py-24 ">
           <div className="text-center mb-10">
             {" "}
-            <h2>CUSTOMER REVIEW</h2>
+            <div className="flex justify-center">
+              {" "}
+              <Secondary_Title_Section
+                secondary_title={"CUSTOMER REVIEW"}
+                active={"active"}
+              />
+            </div>
             <h1 className="text-5xl font-bold">
               {" "}
               Listen to what our customers say
             </h1>
           </div>
-          <div className=" grid grid-cols-3 gap-5 gap-y-10">
+          <div className=" grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5 justify-center items-center align-middle p-2 md:p-0 gap-y-10">
             <Single_Review_Card
               name="Charlie Leuschke"
               description={

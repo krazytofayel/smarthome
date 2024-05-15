@@ -7,10 +7,10 @@ import Why_ChoosUs_Single_Card from "./Why_ChoosUs_Components/Why_ChoosUs_Single
 const Why_ChooseUs_Section = () => {
   return (
     <>
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col  ">
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 py-9   ">
-            <Secondary_Title_Section secondary_title={"Why Choose Us"} />
+      <section className="text-gray-600">
+        <div className="container mx-auto flex gap-10 px-5 py-24 md:flex-row flex-col justify-center items-center md:items-start    ">
+          <div className="lg:flex-grow md:w-1/2  py-9   ">
+            <Secondary_Title_Section secondary_title={"Why Choose Us"} active={'active'} />
             <div className="mt-5 mb-5">
               <Main_Title_Section
                 main_title={"Discover How We Can Enhance Your Living."}
@@ -39,11 +39,11 @@ const Why_ChooseUs_Section = () => {
             </div>
           </div>
 
-          <div className="lg:max-w-2xl ">
+          <div className=" ">
             <div className="bg-[#EBEBEB] rounded-[45px] shadow-lg  ">
-              <div className="p-5  ">
+              <div className="p-7  ">
                 <img
-                  className="object-cover object-center rounded-lg -ml-10 h-full w-full "
+                  className="object-cover object-center rounded-lg -ml-10  w-full "
                   alt="hero"
                   src={whychooseusimg}
                 />
@@ -57,6 +57,6 @@ const Why_ChooseUs_Section = () => {
       </section>
     </>
   );
-}
+};
 
-export default Why_ChooseUs_Section
+export default Why_ChooseUs_Section;

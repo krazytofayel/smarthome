@@ -5,7 +5,7 @@ import icon3 from "../../../../../../../public/images/Home_Page_Images/Aboutus_P
 function AboutUs_Card() {
   return (
     <div className="border-2 border-dashed p-2 rounded mt-10 ">
-      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-2 p-1 mb-4 mt-5 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-2 p-1  mt-5 w-full">
         <AboutUs_Single_Card icon={icon1} text="managed Centrally" />
         <AboutUs_Single_Card
           icon={
