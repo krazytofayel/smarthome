@@ -10,7 +10,7 @@ const Why_ChooseUs_Section = () => {
       <section className="text-gray-600">
         <div className="container mx-auto flex gap-10 px-5 py-24 md:flex-row flex-col justify-center items-center md:items-start    ">
           <div className="lg:flex-grow md:w-1/2  py-9   ">
-            <Secondary_Title_Section secondary_title={"Why Choose Us"} />
+            <Secondary_Title_Section secondary_title={"Why Choose Us"} active={'active'} />
             <div className="mt-5 mb-5">
               <Main_Title_Section
                 main_title={"Discover How We Can Enhance Your Living."}
