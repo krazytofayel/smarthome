@@ -9,8 +9,8 @@ const AboutUs_Mission_Vission = () => {
   return (
     <>
       <div className="p-5 sm:p-8">
-        <section className="text-gray-600 body-font">
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col  ">
+        <section className="text-gray-600 ">
+          <div className="container mx-auto flex px-5 py-10 md:py-24 md:flex-row flex-col  ">
             <div className="lg:flex-grow md:w-1/2 lg:pl-2 md:pr-2 py-9   ">
               <Secondary_Title_Section
                 secondary_title={"Mission & Vision"}
@@ -29,7 +29,7 @@ const AboutUs_Mission_Vission = () => {
                   }
                 />
               </div>
-              <div className="flex flex-row w-full justify-between">
+              <div className="flex flex-col md:flex-row w-full justify-between">
                 <div className=" lg:col-start-2 max-w-md">
                   <h4 className="mt-2 text-md font-bold leading-2 text-[#00ABE4] ">
                     Our Mission
@@ -139,6 +139,6 @@ const AboutUs_Mission_Vission = () => {
       </div>
     </>
   );
-}
+};
 
-export default AboutUs_Mission_Vission
+export default AboutUs_Mission_Vission;

@@ -20,27 +20,26 @@ const Single_Profile_Card = ({
     setIsHovered(false);
   };
 
- const [isFacebookHovered, setIsFacebookHovered] = useState(false);
- const [isInstagramHovered, setIsInstagramHovered] = useState(false);
- const [isLinkedinHovered, setIsLinkedinHovered] = useState(false);
+  const [isFacebookHovered, setIsFacebookHovered] = useState(false);
+  const [isInstagramHovered, setIsInstagramHovered] = useState(false);
+  const [isLinkedinHovered, setIsLinkedinHovered] = useState(false);
 
- const handleFacebookHover = () => {
-   setIsFacebookHovered(!isFacebookHovered);
- };
+  const handleFacebookHover = () => {
+    setIsFacebookHovered(!isFacebookHovered);
+  };
 
- const handleInstagramHover = () => {
-   setIsInstagramHovered(!isInstagramHovered);
- };
+  const handleInstagramHover = () => {
+    setIsInstagramHovered(!isInstagramHovered);
+  };
 
- const handleLinkedinHover = () => {
-   setIsLinkedinHovered(!isLinkedinHovered);
- };
-
+  const handleLinkedinHover = () => {
+    setIsLinkedinHovered(!isLinkedinHovered);
+  };
 
   return (
     <>
       <div
-        className={`group hover:saturate-100 saturate-0 transition-[filter] relative w-[248px] h-[318px] bg-[#bfe7f5] font-['Robot_Flex'] border-b-2  border-b-[#00ABE4]`}
+        className={`group hover:saturate-100 saturate-0 transition-[filter] relative w-[248px] h-[318px] rounded bg-[#bfe7f5] font-['Robot_Flex'] border-b-2  border-b-[#00ABE4]`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
