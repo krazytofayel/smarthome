@@ -42,7 +42,7 @@ const Home = () => {
         </Helmet>
       </div> */}
       <Home_Main_Section />
-      {/* <AboutUs_Section />  */}
+      <AboutUs_Section /> 
       {/* <Why_ChooseUs_Section /> */}
       {/* <Service_Section /> */}
       {/* <Review_Section /> */}
