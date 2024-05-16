@@ -12,7 +12,7 @@ const Choose_Service_Section = () => {
             secondary_title={"Choose the Service You Need"}
           />
         </div>
-        <div className="w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-10  gap-y-10">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-x-10  gap-y-10 p-2 md:p-0">
           <Single_Service_Card
             name="Smart Home Installation"
             description={

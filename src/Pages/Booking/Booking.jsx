@@ -35,7 +35,7 @@ const Booking = () => {
     <>
       <section>
         <div
-          className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out ${
+          className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out lg:p-1 md:p-1 ${
             navfix ? "shadow-lg bg-white" : ""
           }`}
         >
@@ -43,7 +43,7 @@ const Booking = () => {
         </div>
         <div className="bg-cover bg-center bg-no-repeat bg-contact-us-img  bg-blend-multiply h-[25rem] mt-20 mb-5">
           <div className="container mx-auto ">
-            <div className=" flex flex-col justify-start ">
+            <div className=" flex flex-col justify-start p-2 md:p-0 ">
               <DynamicHeading />
               <Breadcrumb_Section items={breadcrumbItems} />
             </div>

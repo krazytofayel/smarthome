@@ -48,7 +48,7 @@ const handleButtonClick = (ht) => {
             ))}
         </div>
         <div>
-          <img src={bookimg} className="h-full w-full container mx-auto" loading="lazy" decoding="async" alt="" />
+          <img src={bookimg} className="h-full w-full container mx-auto mb-5 p-2 md:p-0" loading="lazy" decoding="async" alt="" />
           {selectedHomeType && (
             <img
               src={

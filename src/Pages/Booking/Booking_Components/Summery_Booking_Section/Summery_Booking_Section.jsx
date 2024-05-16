@@ -13,8 +13,8 @@ const Summery_Booking_Section = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-5">
-            <form className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6 bg-slate-100 rounded-lg p-2 shadow-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+            <form className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0  lg:px-6 bg-slate-100 rounded-lg p-2 shadow-lg">
               <div className="mb-3 w-full">
                 <label
                   className="block font-medium mb-[2px] text-[#00ABE4]"
@@ -67,125 +67,89 @@ const Summery_Booking_Section = () => {
               </button>
             </form>
 
-            <div className="grid grid-cols-3 gap-2 lg:w-6/12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-2 w-full ">
               <div className="p-2  w-full">
                 <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                  </svg>
-                  <h2 className="title-font font-medium text-3xl text-gray-900">
-                    2.7K
+                  <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-lg shadow-inner lg:h-14 lg:w-14">
+                    <img
+                      className="w-14 h-14 text-white "
+                      src="https://i.ibb.co/2cWvf6T/house6.png"
+                    />
+                  </div>
+                  <h2 className="title-font font-medium text-3xl text-blue-500">
+                    Home Type
                   </h2>
-                  <p className="leading-relaxed">Downloads</p>
+                  <p className="leading-relaxed">Cottage</p>
                 </div>
               </div>
               <div className="p-2  w-full">
                 <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                  </svg>
-                  <h2 className="title-font font-medium text-3xl text-gray-900">
-                    2.7K
+                  <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-lg shadow-inner lg:h-14 lg:w-14">
+                    <img
+                      className="w-14 h-14 text-white "
+                      src="https://i.ibb.co/vVvPsQB/house5.png"
+                    />
+                  </div>
+                  <h2 className="title-font font-medium text-3xl text-blue-500">
+                    Service Type
                   </h2>
-                  <p className="leading-relaxed">Downloads</p>
+                  <p className="leading-relaxed">Cottage</p>
                 </div>
               </div>
               <div className="p-2  w-full">
                 <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                  </svg>
-                  <h2 className="title-font font-medium text-3xl text-gray-900">
-                    2.7K
+                  <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-lg shadow-inner lg:h-14 lg:w-14">
+                    <img
+                      className="w-14 h-14 text-white "
+                      src="https://i.ibb.co/SQfGT3V/house4.png"
+                    />
+                  </div>
+                  <h2 className="title-font font-medium text-3xl text-blue-500">
+                    choose Date
                   </h2>
-                  <p className="leading-relaxed">Downloads</p>
+                  <p className="leading-relaxed">Cottage</p>
                 </div>
               </div>
               <div className="p-2  w-full">
                 <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                  </svg>
-                  <h2 className="title-font font-medium text-3xl text-gray-900">
-                    2.7K
+                  <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-lg shadow-inner lg:h-14 lg:w-14">
+                    <img
+                      className="w-14 h-14 text-white "
+                      src="https://i.ibb.co/gzCQqw8/house3.png"
+                    />
+                  </div>
+                  <h2 className="title-font font-medium text-3xl text-blue-500">
+                    01 Hours
                   </h2>
-                  <p className="leading-relaxed">Downloads</p>
+                  <p className="leading-relaxed">Cottage</p>
                 </div>
               </div>
               <div className="p-2  w-full">
                 <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                  </svg>
-                  <h2 className="title-font font-medium text-3xl text-gray-900">
+                  <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-lg shadow-inner lg:h-14 lg:w-14">
+                    <img
+                      className="w-14 h-14 text-white "
+                      src="https://i.ibb.co/2cWvf6T/house6.png"
+                    />
+                  </div>
+                  <h2 className="title-font font-medium text-3xl text-blue-500">
                     2.7K
                   </h2>
-                  <p className="leading-relaxed">Downloads</p>
+                  <p className="leading-relaxed">Cottage</p>
                 </div>
               </div>
               <div className="p-2  w-full">
                 <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="text-[#00ABE4] w-12 h-12 mb-3 inline-block"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                  </svg>
-                  <h2 className="title-font font-medium text-3xl text-gray-900">
-                    2.7K
+                  <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-lg shadow-inner lg:h-14 lg:w-14">
+                    <img
+                      className="w-14 h-14 text-white "
+                      src="https://i.ibb.co/j8P04PV/house1.png"
+                    />
+                  </div>
+                  <h2 className="title-font font-medium text-3xl text-blue-500">
+                    Service Type
                   </h2>
-                  <p className="leading-relaxed">Downloads</p>
+                  <p className="leading-relaxed">Cottage</p>
                 </div>
               </div>
             </div>
