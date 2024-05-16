@@ -264,7 +264,9 @@ const Blog_Details = () => {
                                     <img
                                       className="object-cover object-center rounded-[35px] ml-0 md:ml-10 h-[30rem] w-full "
                                       alt="hero"
-                                      src={service_img}
+                                      src={
+                                        "https://i.ibb.co/T8V4YZt/servicefeature.png"
+                                      }
                                     />
                                   </div>
                                 </div>
@@ -275,7 +277,7 @@ const Blog_Details = () => {
                               <Secondary_Title_Section
                                 secondary_title={"Work Process"}
                               />
-                              <p className="mt-10 mb-10">
+                              <p className="mt-3 mb-10 font-medium">
                                 Discover how our expert installation can make
                                 your home smarter and your life easier.
                               </p>
