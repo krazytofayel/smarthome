@@ -47,7 +47,7 @@ const Service = () => {
       <div className="mt-20">
         <div className="bg-cover bg-center bg-no-repeat bg-hero-pattern  bg-blend-multiply h-[25rem]  mb-5">
           <div className="container mx-auto ">
-            <div className=" flex flex-col justify-start ">
+            <div className=" flex flex-col justify-start p-2 md:p-0 ">
               <DynamicHeading />
               <Breadcrumb_Section items={breadcrumbItems} />
             </div>

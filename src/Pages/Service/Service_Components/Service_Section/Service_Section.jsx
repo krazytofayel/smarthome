@@ -7,7 +7,7 @@ const Service_Section = () => {
     <>
       {/* using map for dynamic content  */}
       <section>
-        <div className="w-full mx-auto py-10 bg-gray-50 dark:bg-gray-900 dark:text-white">
+        <div className="w-full mx-auto py-10 bg-gray-50 ">
           <Single_left_Service_Section
             postId='111'
             service_section_header="1. Smart Home Installation."
