@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import { GoPlusCircle } from "react-icons/go";
 
 const Single_Product_Card = ({ product, postId, addToCart }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -24,11 +25,11 @@ const Single_Product_Card = ({ product, postId, addToCart }) => {
   };
   return (
     <>
-      <div className="rounded-2xl overflow-hidden shadow-lg">
+      <div className="rounded-2xl overflow-hidden ">
         <Link to={`/Product/${postId}`}>
           <div className="relative">
             <img className="w-full" src={product.imageUrl} alt="Product" />
-            <div className="hover:bg-transparent rounded-2xl transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+            <div className="hover:bg-transparent rounded-2xl transition duration-300 absolute bottom-0 top-0 right-0 left-0  opacity-25"></div>
             {product.discount && (
               <span
                 className={`discount-tag rounded-lg right-0 top-0 mr-2 mt-2 px-2 py-1 bg-[#00ABE4] text-white absolute ${
@@ -42,16 +43,16 @@ const Single_Product_Card = ({ product, postId, addToCart }) => {
             )}
           </div>
         </Link>
-        <div className="px-6">
+        <div className="px-4">
           <a
             href="#"
-            className=" pt-4 pb-2 font-semibold text-xl inline-block hover:text-[#00ABE4] transition duration-500 ease-in-out"
+            className=" pt-4  font-semibold text-xl inline-block hover:text-[#00ABE4] transition duration-500 ease-in-out"
           >
             {product.name}
           </a>
           <p className="text-gray-500 text-sm">{product.description}</p>
         </div>
-        <div className="px-6 py-2 flex flex-row items-center relative">
+        <div className="px-4  flex flex-row justify-between items-center relative">
           <span className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
             <svg
               height="13px"
@@ -87,22 +88,23 @@ const Single_Product_Card = ({ product, postId, addToCart }) => {
             )}
           </span>
           <button
-            className="m-4 text-white bg-[#00ABE4] hover:bg-[#397f96] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-[#00ABE4] dark:hover:bg-[#00ABE4] focus:outline-none dark:focus:ring-[#00ABE4]"
+            className="m-4 text-white bg-[#00ABE4] hover:bg-[#397f96] focus:ring-4 focus:ring-blue-300  rounded-lg text-lg  px-5 py-2.5 mb-2"
             type="button"
             onClick={handleAddToCart} // Call handleAddToCart function when the button is clicked
             //onClick={addToCart}
             //onClick={() => setIsDrawerOpen(!isDrawerOpen)} // Toggle drawer visibility
           >
-            +
+            <GoPlusCircle />
           </button>
-          <div
+          {/* drawer code cart */}
+          {/* <div
             className={`${
               isDrawerOpen ? "translate-x-0" : "translate-x-full"
-            } fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform bg-white w-80 dark:bg-gray-800`}
+            } fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform bg-white w-80 `}
           >
-            {/* Drawer content */}
+          
             <h5 className="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
-              Right drawer
+              Right draw
             </h5>
             <button
               type="button"
@@ -166,7 +168,7 @@ const Single_Product_Card = ({ product, postId, addToCart }) => {
                 </svg>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>{" "}
     </>

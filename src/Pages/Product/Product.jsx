@@ -121,11 +121,26 @@ const Product = () => {
     },
     // Add more products as needed
   ];
+
+   const removeItemFromCart = (productId) => {
+     // Filter out the item with the given productId from the cart
+     const updatedCart = clickedProducts.filter(
+       (product) => product.id !== productId
+     );
+     // Update the state with the new cart
+     setClickedProducts(updatedCart);
+     // Update cartCount
+     updateCartCount(updatedCart.length);
+   };
+  const updateCartCount = (newCount) => {
+    // Update the cartCount state
+    setCartCount(newCount);
+  };
   return (
     <>
       <section>
         <div
-          className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out ${
+          className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out md:p-1 lg:p-1 ${
             navfix ? "shadow-lg bg-white" : ""
           }`}
         >
@@ -134,12 +149,14 @@ const Product = () => {
             addToCart={addToCart}
             product={products}
             clickedProducts={clickedProducts}
+            removeItemFromCart={removeItemFromCart}
+            updateCartCount={updateCartCount}
           />
         </div>
         <div className="mt-24">
           <Product_Details addToCart={addToCart} products={products} />
         </div>
-        <Footer/>
+        <Footer />
       </section>
     </>
   );

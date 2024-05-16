@@ -5,7 +5,12 @@ import { motion } from "framer-motion";
 import { FaShoppingBag } from "react-icons/fa";
 import QuantityCounter from "../QuantityCounter _Section/QuantityCounter";
 import Global_Button_Section from "../Global_Buton_Section/Global_Button_Section";
-const NavBar = ({ cartCount, clickedProducts }) => {
+const NavBar = ({
+  cartCount,
+  clickedProducts,
+  removeItemFromCart,
+ 
+}) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   let Links = [
@@ -137,9 +142,9 @@ const NavBar = ({ cartCount, clickedProducts }) => {
               onClick={() => setIsDrawerOpen(!isDrawerOpen)} // Toggle drawer visibility
               className="relative inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-[#00ABE4] rounded-lg hover:bg-[#35768b] focus:ring-4 focus:outline-none focus:ring-[#9de0f7] dark:bg-[#00ABE4] dark:hover:bg-[#3f6875] dark:focus:ring-[#00ABE4]"
             >
-              <FaShoppingBag  />
+              <FaShoppingBag />
               {cartCount > 0 && ( // Only show the count if cartCount is greater than 0
-                <div className=" py-2 absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                <div className=" py-2 absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 ">
                   {cartCount}
                 </div>
               )}
@@ -148,7 +153,7 @@ const NavBar = ({ cartCount, clickedProducts }) => {
             <div
               className={`${
                 isDrawerOpen ? "translate-x-0" : "translate-x-full"
-              } fixed top-0 right-0 z-40 h-screen w-[30%] p-4 overflow-y-auto transition-transform bg-white  dark:bg-gray-800`}
+              } fixed top-0 right-0 z-40 h-screen w-[30%] p-4 overflow-y-auto transition-transform bg-white  dark:bg-gray-200`}
             >
               {/* Drawer content */}
               <h5 className="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
@@ -224,7 +229,10 @@ const NavBar = ({ cartCount, clickedProducts }) => {
                             <p className="text-xs leading-3 underline text-gray-800 cursor-pointer">
                               Add to favorites
                             </p>
-                            <p className="text-xs leading-3 underline text-red-500 pl-5 cursor-pointer">
+                            <p
+                              className="text-xs leading-3 underline text-red-500 pl-5 cursor-pointer"
+                              onClick={() => removeItemFromCart(product.id)}
+                            >
                               Remove
                             </p>
                           </div>

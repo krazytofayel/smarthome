@@ -72,14 +72,16 @@ const Product_Details = ({ addToCart, products }) => {
         <div>
           <div className="container mx-auto grid grid-cols-12">
             <div className="col-span-12 lg:col-span-3">
-              <div>
-                <div className=" border-[#71d0f0] border-l-8">
-                  <Secondary_Title_Section
-                    secondary_title={"Product Category"}
-                  />
-                </div>
+              <div className="flex flex-row md:flex-col gap-5 justify-center mb-5 lg:mb-5">
                 <div>
-                  <Product_Category />
+                  <div className=" border-[#71d0f0] border-l-8">
+                    <Secondary_Title_Section
+                      secondary_title={"Product Category"}
+                    />
+                  </div>
+                  <div>
+                    <Product_Category />
+                  </div>
                 </div>
                 <div className="mt-5">
                   <div className=" border-[#71d0f0] border-l-8">
@@ -98,11 +100,11 @@ const Product_Details = ({ addToCart, products }) => {
               </div>
             </div>
             <div className="col-span-12 lg:col-span-9">
-              <div>
+              <div className="p-2 md:p-0">
                 <Slider slides={slides} />
               </div>
-              <div>
-                <div className="mt-2">
+              <div className="p-2 md:p-0">
+                <div className="mt-2 ">
                   <Secondary_Title_Section
                     secondary_title={"Our Collection Of Products"}
                   />
