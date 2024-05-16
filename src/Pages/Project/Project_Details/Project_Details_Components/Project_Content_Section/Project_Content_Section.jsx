@@ -1,6 +1,7 @@
 import Global_Button_Section from "../../../../../Components/Shareable_Components/Global_Buton_Section/Global_Button_Section";
 import Secondary_Title_Section from "../../../../../Components/Shareable_Components/Secondary_Title_Section/Secondary_Title_Section";
 import service_img from '../../../../../../public/images/Service_Page_Images/service_page_images.png'
+import Footer from "../../../../../Components/Shareable_Components/Footer/Footer";
 
 const Project_Content_Section = () => {
   return (
@@ -406,6 +407,7 @@ const Project_Content_Section = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }
