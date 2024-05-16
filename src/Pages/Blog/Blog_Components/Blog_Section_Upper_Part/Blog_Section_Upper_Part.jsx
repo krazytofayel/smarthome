@@ -24,7 +24,7 @@ const Blog_Section_Upper_Part = () => {
     <>
       <div className="bg-cover bg-center bg-no-repeat bg-hero-pattern  bg-blend-multiply h-[25rem] mt-20 mb-5">
         <div className="container mx-auto ">
-          <div className=" flex flex-col justify-start ">
+          <div className=" flex flex-col justify-start p-2 mb:p-0 ">
             <DynamicHeading />
             <Breadcrumb_Section items={breadcrumbItems} />
           </div>

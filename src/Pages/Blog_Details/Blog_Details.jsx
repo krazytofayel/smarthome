@@ -75,15 +75,16 @@ const Blog_Details = () => {
 
           <div>
             <div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4  p-2 md:p-0 ml-5 mb-3">
                 <img
                   className="w-10 h-10 rounded-full"
-                  src={post.imageUrl}
+                  src="https://i.ibb.co/SsMbkHJ/persion.jpg"
                   alt="Author Profile"
                 />
-                <div className="font-medium dark:text-white">
-                  <div>{post.author}</div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">
+
+                <div className="font-medium ">
+                  <div className="text-lg font-bold">{post.author}</div>
+                  <div className="text-sm text-gray-500 ">
                     Joined in {post.joinedDate} ({post.readTime} read)
                   </div>
                 </div>
@@ -103,10 +104,10 @@ const Blog_Details = () => {
 
                   <div>
                     <div className="grid grid-cols-12 gap-5 lg:gap-12  p-2">
-                      <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
+                      <div className="col-span-12 lg:col-span-8 mb-6 lg:mb-0">
                         <p>{post.content}</p>
                       </div>
-                      <div className="col-span-12 lg:col-span-3 mb-6 lg:mb-0">
+                      <div className="col-span-12 lg:col-span-4 mb-6 lg:mb-0">
                         <div className=" w-auto bg-white border border-gray-200 rounded-lg shadow pb-8 p-2">
                           <h5 className="mb-3 p-2 text-base font-semibold bg-[#00ABE4] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl ">
                             popular post

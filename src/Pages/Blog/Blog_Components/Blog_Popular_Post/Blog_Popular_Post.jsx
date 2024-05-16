@@ -9,8 +9,8 @@ const Blog_Popular_Post = () => {
     <>
       <section>
         <div>
-          <div className="Blog-title-section container mx-auto">
-            <div className="flex justify-between mb-5 mt-5">
+          <div className=" container mx-auto">
+            <div className="flex justify-between mb-5 mt-5  p-2 md:p-0">
               <div>
                 <Secondary_Title_Section secondary_title={"Popular Post"} />
               </div>
@@ -21,7 +21,7 @@ const Blog_Popular_Post = () => {
               </div>
             </div>
           </div>
-          <div className="container mx-auto grid grid-cols-2 justify-center items-center gap-5">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center p-2 md:p-0 gap-5">
             <div>
               <Single_Blog_post_card
                 imageUrl={card1}

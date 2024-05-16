@@ -12,7 +12,7 @@ const Blog_Recent_Post = () => {
       <section className="mt-10 mb-10">
         <div>
           <div className="Blog-title-section container mx-auto ">
-            <div className="flex justify-between mb-5 mt-5">
+            <div className="flex justify-between mb-5 mt-5  p-2 md:p-0">
               <div>
                 <Secondary_Title_Section secondary_title={"Recent Post"} />
               </div>
@@ -23,7 +23,7 @@ const Blog_Recent_Post = () => {
               </div>
             </div>
           </div>
-          <div className="container mx-auto grid grid-cols-3 justify-center items-center gap-5">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 p-2 md:p-0">
             <div>
               <Single_Blog_post_card
                 imageUrl={card3}
@@ -45,7 +45,6 @@ const Blog_Recent_Post = () => {
               />
             </div>
             <div>
-              
               <Single_Blog_post_card
                 imageUrl={card5}
                 title="Exercises"
