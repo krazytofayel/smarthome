@@ -58,28 +58,27 @@ const Blog_Details = () => {
   }
   window.addEventListener("scroll", setFixed);
 
-
-       const breadcrumbItems = [
-         { text: "Home", href: "#", icon: "home" },
-         {
-           text: "Service",
-           href: "#",
-           linkClasses:
-             "text-sm font-medium text-white hover:text-blue-600 md:ms-2 ",
-           icon: "arrow",
-         },
-         {
-           text: "All Service",
-           href: "#",
-           linkClasses:
-             "text-sm font-medium text-white hover:text-blue-600 md:ms-2 ",
-           icon: "arrow",
-         },
-       ];
+  const breadcrumbItems = [
+    { text: "Home", href: "#", icon: "home" },
+    {
+      text: "Service",
+      href: "#",
+      linkClasses:
+        "text-sm font-medium text-white hover:text-blue-600 md:ms-2 ",
+      icon: "arrow",
+    },
+    {
+      text: "All Service",
+      href: "#",
+      linkClasses:
+        "text-sm font-medium text-white hover:text-blue-600 md:ms-2 ",
+      icon: "arrow",
+    },
+  ];
   return (
     <>
       <div
-        className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out ${
+        className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out md:p-1 lg:p-1 ${
           navfix ? "shadow-lg bg-white" : ""
         }`}
       >
@@ -90,23 +89,28 @@ const Blog_Details = () => {
         <div className="mt-20">
           <div className="bg-cover bg-center bg-no-repeat bg-contact-us-img  bg-blend-multiply h-[25rem] mt-20 mb-5">
             <div className="container mx-auto ">
-              <div className=" flex flex-col justify-start ">
+              <div className=" flex flex-col justify-start p-2 md:p-0 ">
                 <DynamicHeading pageTitle={"our heading"} />
                 <Breadcrumb_Section items={breadcrumbItems} />
               </div>
             </div>
           </div>
         </div>
-        <div className="container mx-auto mt-24 mb-24">
+        <div className="container mx-auto mt-24 mb-10 md:mb-24">
           <div></div>
 
           <div>
             <div>
-              <div className="flex items-center gap-4">
-                <img className="w-10 h-10 rounded-full" alt="Author Profile" />
-                <div className="font-medium dark:text-white">
-                  <div>{post.author}</div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">
+              <div className="flex items-center gap-4  p-2 md:p-0 ml-5 mb-3">
+                <img
+                  className="w-10 h-10 rounded-full"
+                  src="https://i.ibb.co/SsMbkHJ/persion.jpg"
+                  alt="Author Profile"
+                />
+
+                <div className="font-medium ">
+                  <div className="text-lg font-bold">{post.author}</div>
+                  <div className="text-sm text-gray-500 ">
                     Joined in {post.joinedDate} ({post.readTime} read)
                   </div>
                 </div>
@@ -129,9 +133,9 @@ const Blog_Details = () => {
                       <div className="col-span-12 lg:col-span-8 mb-6 lg:mb-0">
                         {/* <p>{post.content}</p> */}
                         <div className="bg-[#EBEBEB] rounded-[45px] shadow-lg  ">
-                          <div className="p-5  ">
+                          <div className="p-7  ">
                             <img
-                              className="object-cover object-center rounded-[35px] ml-12 h-full w-full "
+                              className="object-cover object-center rounded-[35px] ml-0 md:ml-10 h-[30rem] w-full "
                               alt="hero"
                               src={service_img}
                             />
@@ -196,77 +200,56 @@ const Blog_Details = () => {
                               maximus ante fermentum sit amet. Pellentesque
                               commodo lacus at sodales sodales.
                             </p>
-                            <div className="flex gap-10 mt-10 mb-10">
+                            <div>
+                              <h1 className="font-bold text-xl md:text-4xl text-black mt-10">
+                                Service Benefits
+                              </h1>
+                              <p className="text-lg font-normal">
+                                Explore the advantages of our Smart Home
+                                Installation service
+                              </p>
+                            </div>
+                            <div className="flex flex-col w-full gap-10 mb-10">
                               <div>
                                 <div className="flex gap-2 mt-5 mb-5">
                                   <div>
-                                    <div className="border-r border-4 border-blue-600 h-[10rem]"></div>
+                                    <div className="border-r border-4 border-blue-600 h-full"></div>
                                   </div>
 
                                   <div>
                                     <div>
-                                      <h1 className="font-bold text-xl text-green-900">
-                                        Feature List
-                                      </h1>
                                       <ul className="mt-3 flex flex-col space-y-2">
-                                        <li className="flex">
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth="1.5"
-                                            stroke="currentColor"
-                                            aria-hidden="true"
-                                            className="mr-2 h-auto w-6 text-green-600 sm:w-7"
-                                          >
-                                            <path
-                                              strokeLinecap="round"
-                                              strokeLinejoin="round"
-                                              d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
-                                            ></path>
-                                          </svg>
+                                        <li className="flex flex-col">
+                                          <h1 className="text-lg font-bold">
+                                            1. Easy Control:
+                                          </h1>
                                           <p className="text-base text-slate-700 sm:text-lg">
-                                            30 seconds to setup
+                                            Manage your home's lights,
+                                            temperature, and security from one
+                                            place or by just talking, making
+                                            daily tasks simpler.
                                           </p>
                                         </li>
-                                        <li className="flex">
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth="1.5"
-                                            stroke="currentColor"
-                                            aria-hidden="true"
-                                            className="mr-2 h-auto w-6 text-green-600 sm:w-7"
-                                          >
-                                            <path
-                                              strokeLinecap="round"
-                                              strokeLinejoin="round"
-                                              d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
-                                            ></path>
-                                          </svg>
+                                        <li className="flex flex-col">
+                                          <h1 className="text-lg font-bold">
+                                            2. Energy Efficiency:
+                                          </h1>
                                           <p className="text-base text-slate-700 sm:text-lg">
-                                            Easy to use
+                                            Use smart thermostats and lights
+                                            that adjust automatically, helping
+                                            you save money on energy bills and
+                                            being kinder to the environment.
                                           </p>
                                         </li>
-                                        <li className="flex">
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth="1.5"
-                                            stroke="currentColor"
-                                            aria-hidden="true"
-                                            className="mr-2 h-auto w-6 text-green-600 sm:w-7"
-                                          >
-                                            <path
-                                              strokeLinecap="round"
-                                              strokeLinejoin="round"
-                                              d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
-                                            ></path>
-                                          </svg>
+                                        <li className="flex flex-col">
+                                          <h1 className="text-lg font-bold">
+                                            3. Feel Secure:
+                                          </h1>
                                           <p className="text-base text-slate-700 sm:text-lg">
-                                            Generous free-tier
+                                            Keep your home safe with smart locks
+                                            and cameras that send alerts and let
+                                            you check on things when you're
+                                            away, giving you peace of mind.
                                           </p>
                                         </li>
                                       </ul>
@@ -277,9 +260,9 @@ const Blog_Details = () => {
                               <div>
                                 {" "}
                                 <div className="bg-[#EBEBEB] rounded-[45px] shadow-lg  ">
-                                  <div className="p-5  ">
+                                  <div className="p-7  ">
                                     <img
-                                      className="object-cover object-center rounded-[35px] ml-12 h-[15rem] w-full "
+                                      className="object-cover object-center rounded-[35px] ml-0 md:ml-10 h-[30rem] w-full "
                                       alt="hero"
                                       src={service_img}
                                     />
@@ -293,32 +276,29 @@ const Blog_Details = () => {
                                 secondary_title={"Work Process"}
                               />
                               <p className="mt-10 mb-10">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Ut et massa mi. Aliquam in
-                                hendrerit urna. Pellentesque sit amet sapien
-                                fringilla, mattis ligula consectetur, ultrices
-                                mauris. Maecenas vitae mattis tellus.{" "}
+                                Discover how our expert installation can make
+                                your home smarter and your life easier.
                               </p>
 
-                              <div className="flex gap-5">
-                                <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                  <svg
-                                    className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                  >
-                                    <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
-                                  </svg>
+                              <div className="flex flex-col md:flex-row justify-center items-center gap-5">
+                                <div className="max-w-sm max-h-[22rem] p-6 bg-white border border-gray-200 rounded-lg shadow ">
+                                  <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-lg shadow-inner lg:h-14 lg:w-14">
+                                    <img
+                                      className="w-14 h-14 text-white "
+                                      src="https://i.ibb.co/fQ881vt/service3.png"
+                                      alt=""
+                                    ></img>
+                                  </div>
                                   <a href="#">
-                                    <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                      Need a help in Claim?
+                                    <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">
+                                      Project Planning
                                     </h5>
                                   </a>
-                                  <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                                    Go to this step by step guideline process on
-                                    how to certify for your weekly benefits:
+                                  <p className="mb-3 font-normal text-gray-500 ">
+                                    For planning, we meticulously design a
+                                    tailored blueprint to ensure your smart home
+                                    aligns perfectly with your preferences and
+                                    requirements.
                                   </p>
                                   <a
                                     href="#"
@@ -342,24 +322,24 @@ const Blog_Details = () => {
                                     </svg>
                                   </a>
                                 </div>
-                                <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                  <svg
-                                    className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                  >
-                                    <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
-                                  </svg>
+                                <div className="max-w-sm max-h-[22rem] p-6 bg-white border border-gray-200 rounded-lg shadow ">
+                                  <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-lg shadow-inner lg:h-14 lg:w-14">
+                                    <img
+                                      className="w-14 h-14 text-white "
+                                      src="https://i.ibb.co/7t4XrKD/service2.png"
+                                      alt=""
+                                    ></img>
+                                  </div>
                                   <a href="#">
-                                    <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                      Need a help in Claim?
+                                    <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">
+                                      Work In Progress
                                     </h5>
                                   </a>
-                                  <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                                    Go to this step by step guideline process on
-                                    how to certify for your weekly benefits:
+                                  <p className="mb-3 font-normal text-gray-500 ">
+                                    Our skilled team efficiently installs and
+                                    integrates smart devices according to the
+                                    planned design, maintaining transparent
+                                    communication throughout.
                                   </p>
                                   <a
                                     href="#"
@@ -383,24 +363,24 @@ const Blog_Details = () => {
                                     </svg>
                                   </a>
                                 </div>
-                                <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                  <svg
-                                    className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                  >
-                                    <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
-                                  </svg>
+                                <div className="max-w-sm max-h-[22rem] p-6 bg-white border border-gray-200 rounded-lg shadow ">
+                                  <div className="flex items-center justify-center w-10 h-10 mb-2 rounded-lg shadow-inner lg:h-14 lg:w-14">
+                                    <img
+                                      className="w-14 h-14 text-white "
+                                      src="https://i.ibb.co/1J0HYwH/service1.png"
+                                      alt=""
+                                    ></img>
+                                  </div>
                                   <a href="#">
-                                    <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                      Need a help in Claim?
+                                    <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">
+                                      Project Completion
                                     </h5>
                                   </a>
-                                  <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                                    Go to this step by step guideline process on
-                                    how to certify for your weekly benefits:
+                                  <p className="mb-3 font-normal text-gray-500 ">
+                                    We conduct thorough testing and provide
+                                    comprehensive demonstrations to ensure your
+                                    smart home functions seamlessly, backed by
+                                    ongoing support for your peace of mind.
                                   </p>
                                   <a
                                     href="#"
@@ -429,7 +409,7 @@ const Blog_Details = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-span-12 lg:col-span-3 mb-6 lg:mb-0">
+                      <div className="col-span-12 lg:col-span-4 mb-6 lg:mb-0">
                         <div className=" w-auto bg-[#00ABE4] border border-gray-200 rounded-lg shadow  p-5">
                           {/* <h5 className="mb-3 p-2 text-base font-semibold bg-[#00ABE4] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl ">
                             popular post
@@ -438,14 +418,14 @@ const Blog_Details = () => {
                           <form className="max-w-md mx-auto">
                             <label
                               htmlFor="default-search"
-                              className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                              className="mb-2 text-sm font-medium text-gray-900 sr-only"
                             >
                               Search
                             </label>
                             <div className="relative">
                               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                                 <svg
-                                  className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                                  className="w-4 h-4 text-gray-500 "
                                   aria-hidden="true"
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -463,13 +443,13 @@ const Blog_Details = () => {
                               <input
                                 type="search"
                                 id="default-search"
-                                className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
                                 placeholder="Search Mockups, Logos..."
                                 required
                               />
                               <button
                                 type="submit"
-                                className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
                               >
                                 Search
                               </button>

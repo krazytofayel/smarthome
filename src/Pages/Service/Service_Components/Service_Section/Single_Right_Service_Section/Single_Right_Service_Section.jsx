@@ -15,8 +15,8 @@ const Single_Right_Service_Section = ({
       <section>
         <Link to={`/service_details/${postId}`}>
           {" "}
-          <div className=" xl:w-[90%] sm:w-[85%] xs:w-[90%] mx-auto flex  flex-col lg:flex-row  lg:gap-4 xs:gap-2 justify-center lg:items-center md:items-center mt-4 p-2 md:p-0">
-            <div className="lg:w-[50%] sm:w-full xs:w-full  dark:bg-gray-900 dark:text-gray-400 md:p-4 xs:p-0 rounded-md ">
+          <div className="xl:w-[90%] sm:w-[85%] xs:w-[90%] mx-auto flex  flex-col lg:flex-row  lg:gap-4 xs:gap-2 justify-center lg:items-stretch md:items-center mt-4 mb-20 p-2 md:p-0">
+            <div className="lg:w-[50%] sm:w-full xs:w-full   md:p-4 xs:p-0 rounded-md ">
               <Card_title_Section card_title={service_section_header} />
 
               <p className="text-lg mt-4 mb-4 max-w-2xl leading-10">
@@ -27,9 +27,9 @@ const Single_Right_Service_Section = ({
               />
             </div>
 
-            <div className=" lg:w-[40%] xs:w-full">
+            <div className="lg:w-[40%] xs:w-full  ">
               <img
-                className="rounded-[2rem]"
+                className="rounded-[2rem] w-full h-full"
                 src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8aG9tZXxlbnwwfDB8fHwxNzEwNDkwMDcwfDA&ixlib=rb-4.0.3&q=80&w=1080"
                 alt="billboard image"
               />
