@@ -21,7 +21,7 @@ const Project_Details = () => {
   return (
     <>
       <div
-        className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out ${
+        className={`z-20 fixed top-0 bg-white w-full transition-all duration-300 ease-in-out lg:p-1 md:p-1 ${
           navfix ? "shadow-lg bg-white" : ""
         }`}
       >

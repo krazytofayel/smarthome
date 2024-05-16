@@ -23,7 +23,7 @@ const Project_Details_UpperPart = () => {
     <>
       <div className="bg-cover bg-center bg-no-repeat bg-contact-us-img  bg-blend-multiply h-[25rem] mt-20 mb-5">
         <div className="container mx-auto ">
-          <div className=" flex flex-col justify-start ">
+          <div className=" flex flex-col justify-start p-2 md:p-0 ">
             <DynamicHeading />
             <Breadcrumb_Section items={breadcrumbItems} />
           </div>

@@ -9,7 +9,7 @@ const Project_Details_Banner = () => {
         </div>
         <div>
           <div className="bg-[#00ABE4] border-t-[5px] rounded border-t-blue-600 p-2 ">
-            <div className="flex gap-2 justify-between">
+            <div className="flex flex-wrap gap-2 justify-between">
               <div>
                 <h1>Mr.Tofayel islam</h1>
                 <p>23224 343</p>

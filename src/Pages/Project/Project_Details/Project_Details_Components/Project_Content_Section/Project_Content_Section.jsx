@@ -48,7 +48,7 @@ const Project_Content_Section = () => {
                   Vestibulum auctor ornare leo
                 </p>
               </div>
-              <div className="flex gap-10 mt-10 mb-10">
+              <div className="flex flex-col md:flex-row gap-10 mt-10 mb-10">
                 <div>
                   <div className="flex gap-2 mt-5 mb-5">
                     <div>
@@ -129,7 +129,7 @@ const Project_Content_Section = () => {
                 <div>
                   {" "}
                   <div className="bg-[#EBEBEB] rounded-[45px] shadow-lg  ">
-                    <div className="p-5  ">
+                    <div className="p-7  ">
                       <img
                         className="object-cover object-center rounded-[35px] ml-12 h-[15rem] w-[25rem] "
                         alt="hero"
@@ -146,7 +146,7 @@ const Project_Content_Section = () => {
                     Project Challenge
                   </span>
                   <ul className="flex flex-wrap text-sm font-medium text-gray-700 dark:text-white sm:text-base md:mx-auto md:max-w-screen-sm">
-                    <li className="my-1 flex w-1/2 items-center">
+                    <li className="my-1 flex  w-1/2 items-center">
                       <svg
                         className="mr-2 flex-shrink-0 text-blue-500"
                         width="20"
