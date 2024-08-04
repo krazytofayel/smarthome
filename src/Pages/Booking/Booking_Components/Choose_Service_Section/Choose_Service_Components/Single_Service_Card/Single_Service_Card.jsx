@@ -3,9 +3,9 @@ import { CiBadgeDollar } from "react-icons/ci";
 const Single_Service_Card = ({ name, description,imgSrc }) => {
   return (
     <>
-      <section className="max-w-sm border border-dashed rounded-xl shadow-xl p-4 hover:bg-[#00ABE4]">
+      <section className="max-w-sm border border-dashed rounded-xl shadow-xl p-4 hover:bg-[#00ABE4] hover:text-white">
         <div className="flex items-center gap-2 mb-4">
-          <span className="w-10 h-10  flex justify-center items-center rounded-full text-[#00ABE4]">
+          <span className="w-10 h-10  flex justify-center items-center rounded-full text-[#00ABE4] ">
             {imgSrc}
           </span>
           <div className="font-medium ">
@@ -63,7 +63,7 @@ const Single_Service_Card = ({ name, description,imgSrc }) => {
         <div className="flex gap-5 mt-2">
           <a
             href="#"
-            className="flex items-center p-2 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600  dark:text-white"
+            className="flex items-center p-2 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
           >
             <MdOutlineWatchLater className="text-[#00ABE4]" />
             <span className="flex-1 ms-3 whitespace-nowrap text-[#00ABE4]">
@@ -72,7 +72,7 @@ const Single_Service_Card = ({ name, description,imgSrc }) => {
           </a>
           <a
             href="#"
-            className="flex items-center p-2 px-4 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600  dark:text-white"
+            className="flex items-center p-2 px-4 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
           >
             <CiBadgeDollar className="text-[#00ABE4]" />
             <span className="flex-1 ms-2 whitespace-nowrap text-[#00ABE4]">

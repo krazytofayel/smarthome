@@ -12,7 +12,7 @@ const Blog_All_Post = () => {
       <section>
         <div>
           <div className="Blog-title-section container mx-auto ">
-            <div className="flex justify-between mb-5 mt-5">
+            <div className="flex justify-between mb-5 mt-5 p-2 md:p-0">
               <div>
                 <Secondary_Title_Section secondary_title={"All Post"} />
               </div>
@@ -24,7 +24,7 @@ const Blog_All_Post = () => {
             </div>
           </div>
 
-          <div className="container mx-auto grid grid-cols-2 justify-center items-center gap-5  mb-5">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2  justify-center items-center gap-5 p-2 md:p-0 mb-5">
             <div>
               <Single_Blog_post_card
                 imageUrl={card1}
@@ -46,7 +46,7 @@ const Blog_All_Post = () => {
               />
             </div>
           </div>
-          <div className="container mx-auto grid grid-cols-3 justify-center items-center gap-5 mt-10 mb-5">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 p-2 md:p-0 mt-10 mb-5">
             <div>
               <Single_Blog_post_card
                 imageUrl={card3}
@@ -80,7 +80,7 @@ const Blog_All_Post = () => {
           </div>
         </div>
         <div className="flex justify-center items-center mt-20 mb-20 ">
-          <Global_Button_Section button_text={"See More"}/>
+          <Global_Button_Section button_text={"See More"} />
         </div>
       </section>
     </>

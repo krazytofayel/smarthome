@@ -7,6 +7,7 @@ import AboutUs_Section from "./AboutUs_Components/AboutUs_Section/AboutUs_Sectio
 import HowIt_Work_Section from "./AboutUs_Components/HowIt_Work_Section/HowIt_Work_Section";
 import { useState } from "react";
 import NavBar from "../../Components/Shareable_Components/NavBar/NavBar";
+import Global_Button_Section from "../../Components/Shareable_Components/Global_Buton_Section/Global_Button_Section";
 const AboutUs = () => {
   const breadcrumbItems = [
     { text: "Home", href: "#", icon: "home" },
@@ -55,6 +56,23 @@ const AboutUs = () => {
           <HowIt_Work_Section />
           <div className=" flex justify-center  items-center  ">
             <AboutUs_ProfileCard />
+          </div>
+
+          <div>
+            <div className="container mx-auto bg-teal-400 text-center rounded-xl p-6 mt-20 mb-20">
+              <h2 className="text-4xl font-medium  mb-6 text-white">
+                Find what's write for your home.
+              </h2>
+
+              {/* <a
+                href="#"
+                className=" bg-white  text-blue-500 rounded-lg px-4 py-2 font-medium hover:bg-blue-500 hover:text-white transition-all duration-300"
+              >
+                Contact us
+              </a> */}
+
+              <Global_Button_Section button_text={'Contact Us'} />
+            </div>
           </div>
         </div>
 

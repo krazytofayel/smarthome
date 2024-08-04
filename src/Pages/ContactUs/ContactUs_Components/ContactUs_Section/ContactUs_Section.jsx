@@ -1,5 +1,3 @@
-
-
 const ContactUs_Section = () => {
   return (
     <>
@@ -20,7 +18,7 @@ const ContactUs_Section = () => {
 
             <div className="flex items-center mt-5">
               <svg
-                className="h-6 mr-2 text-[#00ABE4]"
+                className="h-12 font-bold mr-2 text-[#00ABE4]"
                 fill="currentColor"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -125,12 +123,12 @@ const ContactUs_Section = () => {
               <span className="text-sm">24/7</span>
             </div>
           </div>
-          <form className="md:col-span-8 p-10">
+          <form className="md:col-span-8 p-3 md:p-10">
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-first-name"
+                  htmlFor="grid-first-name"
                 >
                   First Name
                 </label>
@@ -147,7 +145,7 @@ const ContactUs_Section = () => {
               <div className="w-full md:w-1/2 px-3">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-last-name"
+                  htmlFor="grid-last-name"
                 >
                   Last Name
                 </label>
@@ -163,7 +161,7 @@ const ContactUs_Section = () => {
               <div className="w-full px-3">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-password"
+                  htmlFor="grid-password"
                 >
                   Email Address
                 </label>
@@ -180,7 +178,7 @@ const ContactUs_Section = () => {
               <div className="w-full px-3">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-password"
+                  htmlFor="grid-password"
                 >
                   Your Message
                 </label>
@@ -189,7 +187,7 @@ const ContactUs_Section = () => {
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 ></textarea>
               </div>
-              <div className="flex justify-between w-full px-3">
+              <div className="flex flex-col md:flex-row gap-5 justify-between w-full px-3">
                 <div className="md:flex md:items-center">
                   <label className="block text-gray-500 font-bold">
                     <input className="mr-2 leading-tight" type="checkbox" />
@@ -209,6 +207,6 @@ const ContactUs_Section = () => {
       </div>
     </>
   );
-}
+};
 
-export default ContactUs_Section
+export default ContactUs_Section;
