@@ -1,3 +1,4 @@
+import useConvertAndCompressImages from "../../../../Components/CustomHooks/ConvertAndCompressImages/useConvertAndCompressImages";
 import Secondary_Title_Section from "../../../../Components/Shareable_Components/Secondary_Title_Section/Secondary_Title_Section";
 import Single_Blog_post_card from "../Blog_card_Post_Component/Single_Blog_post_card";
 
@@ -7,6 +8,8 @@ import card3 from "/public/images/blog_Page_Images/Recent_Post_images/recentpost
 import card4 from "/public/images/blog_Page_Images/Recent_Post_images/recentpost-img-2.png";
 import card5 from "/public/images/blog_Page_Images/Recent_Post_images/recentpost-img-3.png";
 const Blog_Recent_Post = () => {
+  const imageUrls = [card1, card2, card3, card4, card5];
+  const convertedImages = useConvertAndCompressImages(imageUrls);
   return (
     <>
       <section className="mt-10 mb-10">
@@ -14,7 +17,7 @@ const Blog_Recent_Post = () => {
           <div className="Blog-title-section container mx-auto ">
             <div className="flex justify-between mb-5 mt-5  p-2 md:p-0">
               <div>
-                <Secondary_Title_Section secondary_title={"Recent Post"} />
+                <Secondary_Title_Section secondary_title={"Recent Post"} active={'active'} />
               </div>
               <div>
                 <p className="underline text-blue-500 transition-transform duration-100 hover:scale-105">
@@ -26,7 +29,7 @@ const Blog_Recent_Post = () => {
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 p-2 md:p-0">
             <div>
               <Single_Blog_post_card
-                imageUrl={card3}
+                imageUrl={convertedImages[2] || card3}
                 title="Exercises"
                 description="Create Exercises for any subject with the topics you and your students care about."
                 buttonText="Start Reading"
@@ -36,7 +39,7 @@ const Blog_Recent_Post = () => {
             </div>
             <div>
               <Single_Blog_post_card
-                imageUrl={card4}
+                imageUrl={convertedImages[3] || card4}
                 title="Exercises"
                 description="Create Exercises for any subject with the topics you and your students care about."
                 buttonText="Start Reading"
@@ -46,7 +49,7 @@ const Blog_Recent_Post = () => {
             </div>
             <div>
               <Single_Blog_post_card
-                imageUrl={card5}
+                imageUrl={convertedImages[4] ||  card5}
                 title="Exercises"
                 description="Create Exercises for any subject with the topics you and your students care about."
                 buttonText="Start Reading"

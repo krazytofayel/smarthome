@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Global_Button_Section from "../../../../Components/Shareable_Components/Global_Buton_Section/Global_Button_Section";
 
@@ -9,33 +8,34 @@ const Single_Blog_post_card = ({
   buttonText,
   tag,
   date,
-  postId, // Assuming you have a postId to identify each blog post
+  postId,
 }) => {
+
+  // convert date formate
+  const formatDate = (dateString) => {
+    const [day, month, year] = dateString.split("-");
+    return `${day}-${month}-${year}`;
+  };
   return (
-    <div>
+    <div className="max-w-full bg-[#fcfbfb] rounded-xl shadow flex flex-col ">
       <Link
-        to={`/blog/${postId}`} // Assuming your details page URL is '/blog/:postId'
-        className="p-4 max-w-full border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col"
-      >
-        <img
-          src={imageUrl}
-          className="shadow rounded-lg overflow-hidden border w-full h-full transition-transform duration-300 hover:scale-105"
-          alt={title}
-        />
-        <div className="mt-8">
-          <div className="flex justify-between">
-            <div>{tag}</div>
-            <div>{date}</div>
+        to={`/blog/${postId}`}
+        className="flex flex-col h-full">
+        <div className="h-[14rem] overflow-hidden rounded-t-xl">
+          <img
+            src={imageUrl}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            alt={title}
+          />
+        </div>
+        <div className="p-4 flex flex-col flex-grow">
+          <div className="mt-2 flex justify-between text-sm">
+            <div className="text-[#00ABE4]">{tag}</div>
+            <div className="text-gray-600 text-xs">{formatDate(date)}</div>
           </div>
-          <h4 className="font-bold text-xl">{title}</h4>
-          <p className="mt-2 text-gray-600">{description}</p>
-          <div className="mt-5">
-            {/* <button
-              type="button"
-              className="inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900"
-            >
-              {buttonText}
-            </button> */}
+          <h4 className="font-bold text-xl mt-2 line-clamp-2">{title}</h4>
+          <p className="mt-2 text-gray-600 line-clamp-3 flex-grow">{description}</p>
+          <div className="mt-auto pt-4">
             <Global_Button_Section button_text={buttonText} />
           </div>
         </div>
