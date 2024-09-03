@@ -16,6 +16,9 @@ import Single_Product_Details from "./Pages/Product/Product_Components/Single_Pr
 import Booking from "./Pages/Booking/Booking";
 import Checkout_Section from "./Components/Shareable_Components/Checkout_Section/Checkout_Section";
 import AboutUs from './Pages/AboutUs/AboutUs';
+import OrderHistory from "./Components/Shareable_Components/OrderHistory/OrderHistory";
+import AccountOverview from "./Components/Shareable_Components/Account_overview_Section/AccountOverview";
+import AccountInformation from "./Components/Shareable_Components/Account_Information_Section/AccountInformation";
 
 function App() {
   
@@ -44,6 +47,9 @@ function App() {
         <Route path="/booking" element={<Booking />} />
 
         <Route path="/checkout" element={<Checkout_Section />} />
+        <Route path="/orderlist" element={<OrderHistory/>} />
+        <Route path="/accountoverview" element={<AccountOverview/>} />
+        <Route path="/accountinfo" element={<AccountInformation/>} />
       </Routes>
     </>
   );

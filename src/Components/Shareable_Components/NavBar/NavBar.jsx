@@ -249,6 +249,7 @@ const NavBar = ({
                   <p className="text-lg leading-3 underline text-red-500 pl-5 mt-20 cursor-pointer">
                     total: ${totalAmount.toFixed(2)}
                   </p>
+                  <div className="flex gap-2">
                   <Link to={"/checkout"} className="py-3 text-lg">
                     {" "}
                     <Global_Button_Section
@@ -256,6 +257,22 @@ const NavBar = ({
                       className="text-xl"
                     />
                   </Link>
+                  <Link to={"/orderlist"} className="py-3 text-lg">
+                    {" "}
+                    <Global_Button_Section
+                      button_text={"orderlist"}
+                      className="text-xl"
+                    />
+                  </Link>
+                  <Link to={"/accountoverview"} className="py-3 text-lg">
+                    {" "}
+                    <Global_Button_Section
+                      button_text={"Account"}
+                      className="text-xl"
+                    />
+                  </Link>
+
+                  </div>
                 </div>
               )}
             </div>

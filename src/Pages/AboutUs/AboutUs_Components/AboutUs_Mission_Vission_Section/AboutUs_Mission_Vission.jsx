@@ -22,7 +22,7 @@ const AboutUs_Mission_Vission = () => {
                 />
               </div>
 
-              <div className="text-lg font-semibold ">
+              <div className="text-lg font-semibold mb-10">
                 <Text_Content_Section
                   text_content={
                     "At Smart Home People, we aim to assist individuals and families in embracing the advantages of smart home technology. Our dedication lies in enhancing living spaces to be more convenient, secure, and efficient. Join us on this journey!"
@@ -33,7 +33,7 @@ const AboutUs_Mission_Vission = () => {
                 <div className=" lg:col-start-2 max-w-md">
                   <h4 className="mt-2 text-md font-bold leading-2 text-[#00ABE4] ">
                     Our Mission
-                  </h4>
+                  </h4>          
 
                   <ul className="mt-2 space-y-3 font-medium">
                     <li className="flex items-start lg:col-span-1">
